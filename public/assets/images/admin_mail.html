@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mail Gönderim Merkezi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background-color: #f8f9fa; }
+        .sidebar { min-height: 100vh; background-color: #2c3e50; color: white; position: relative; }
+        .sidebar a { color: #adb5bd; text-decoration: none; padding: 12px 20px; display: block; transition: 0.3s; }
+        .sidebar a:hover, .sidebar a.active { background-color: #34495e; color: #fff; border-left: 4px solid #3498db; }
+        .content-area { padding: 30px; height: 100vh; overflow-y: auto; }
+    </style>
+</head>
+<body>
+
+<div class="container-fluid p-0">
+    <div class="row g-0">
+        
+        <div class="col-md-2 sidebar d-none d-md-block shadow">
+            <div class="p-4 text-center border-bottom border-secondary">
+                <h5 class="fw-bold text-white mb-0"><i class="fa-solid fa-shield-halved text-primary"></i> GhostServer</h5>
+                <small class="text-muted">Yönetici Paneli</small>
+            </div>
+            <div class="pt-3">
+                <a href="/web-yonetici-paneli"><i class="fa-solid fa-chart-line me-2"></i> Dashboard</a>
+                <a href="/web-admin/users"><i class="fa-solid fa-users me-2"></i> Müşteri Yönetimi</a>
+                <a href="/web-admin/mail" class="active"><i class="fa-solid fa-paper-plane me-2"></i> Mail Merkezi</a>
+                <a href="/web-admin/scenarios"><i class="fa-solid fa-brain me-2"></i> Senaryo Fabrikası</a>
+                <a href="/web-admin/database"><i class="fa-solid fa-database me-2"></i> Veritabanı Yönetimi</a>
+                <a href="/web-admin/requests"><i class="fa-solid fa-envelope me-2"></i> Talep ve Öneriler</a>
+                <a href="/web-admin/logs"><i class="fa-solid fa-scroll me-2"></i> Sistem Logları</a>
+            </div>
+            <div class="position-absolute bottom-0 w-100 p-3 border-top border-secondary">
+                <a href="/web-login" class="text-danger"><i class="fa-solid fa-power-off me-2"></i> Çıkış Yap</a>
+            </div>
+        </div>
+
+        <div class="col-md-10 content-area">
+            <div class="d-flex justify-content-between align-items-center mb-4 bg-white p-3 rounded shadow-sm">
+                <h4 class="mb-0 text-dark">✉️ Mail Gönderim Merkezi</h4>
+                <span class="badge bg-primary fs-6">Resend API Aktif</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card shadow-sm border-0 mb-4">
+                        <div class="card-header bg-white border-bottom fw-bold text-primary">
+                            <i class="fa-solid fa-pen-to-square"></i> Yeni E-Posta Oluştur
+                        </div>
+                        <div class="card-body">
+                            <form action="/web-admin/mail/send" method="POST">
+                                
+                                <div class="mb-4 p-3 bg-light rounded border">
+                                    <label class="fw-bold mb-2">1. Hedef Kitleyi Seçin:</label>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="target_audience" value="all" id="targetAll" checked>
+                                        <label class="form-check-label" for="targetAll">Tüm Kayıtlı Kullanıcılar (Aktif & Pasif)</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="target_audience" value="aktif" id="targetActive">
+                                        <label class="form-check-label text-success" for="targetActive">Sadece Aktif Kullanıcılar</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="target_audience" value="pasif" id="targetPassive">
+                                        <label class="form-check-label text-danger" for="targetPassive">Sadece Pasif Kullanıcılar</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="target_audience" value="manual" id="targetManual">
+                                        <label class="form-check-label text-primary" for="targetManual">Sadece Manuel Girdiğim Adresler</label>
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Manuel E-Posta Ekle (Opsiyonel)</label>
+                                    <input type="text" name="manual_emails" class="form-control" placeholder="ornek@mail.com, baska@mail.com (Virgülle ayırın)">
+                                    <small class="text-muted">Sistemdeki kullanıcılara ek olarak bu adreslere de mail gider.</small>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Konu Başlığı</label>
+                                    <input type="text" name="subject" class="form-control" placeholder="Örn: e-Denetim Sistem Güncellemesi" required>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label class="form-label fw-bold">Mesaj İçeriği (HTML Destekler)</label>
+                                    <textarea name="message_body" class="form-control" rows="8" placeholder="<h1>Merhaba,</h1><p>Sistem mesajınızı buraya yazın...</p>" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary w-100 fw-bold shadow-sm" onclick="return confirm('Mailler gönderilecek, onaylıyor musunuz?');">
+                                    <i class="fa-solid fa-paper-plane"></i> Gönderimi Başlat
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-header bg-white border-bottom fw-bold text-secondary">
+                            <i class="fa-solid fa-address-book"></i> Veritabanındaki E-Postalar
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="list-group list-group-flush" style="max-height: 500px; overflow-y: auto;">
+                                {% for u in users %}
+                                <div class="list-group-item d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <small class="d-block fw-bold">{{ u.first_name }} ({{ u.company_name }})</small>
+                                        <small class="text-muted">{{ u.email }}</small>
+                                    </div>
+                                    {% if u.status == 'Aktif' %}
+                                        <span class="badge bg-success rounded-pill">Aktif</span>
+                                    {% else %}
+                                        <span class="badge bg-danger rounded-pill">Pasif</span>
+                                    {% endif %}
+                                </div>
+                                {% else %}
+                                <div class="list-group-item text-center text-muted">Sistemde kayıtlı e-posta bulunamadı.</div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
