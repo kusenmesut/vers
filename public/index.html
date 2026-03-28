@@ -549,81 +549,82 @@ Fatura Yevmiye İkili ekran aynı anda  pivot ekranı çalışma, ADAT HESAPLAMA
 </div>
 </div>
 </div>
-<div class="contact-us section d-none" id="contact">
-<div class="container">
-<div class="row">
-<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="0.5s">
-<form action="" id="contact" method="post">
-<div class="row">
-<div class="col-lg-6 offset-lg-3">
-<div class="section-heading">
-<h6>Contact Us</h6>
-<h2>Fill Out The Form Below To <span>Get</span> In <em>Touch</em> With Us</h2>
-</div>
-</div>
-<div class="col-lg-9">
-<div class="row">
-<div class="col-lg-6">
-<fieldset>
-<input autocomplete="on" id="name" name="name" placeholder="Name" required="" type="name"/>
-</fieldset>
-</div>
-<div class="col-lg-6">
-<fieldset>
-<input autocomplete="on" id="surname" name="surname" placeholder="Surname" required="" type="surname"/>
-</fieldset>
-</div>
-<div class="col-lg-6">
-<fieldset>
-<input id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="" type="text"/>
-</fieldset>
-</div>
-<div class="col-lg-6">
-<fieldset>
-<input autocomplete="on" id="subject" name="subject" placeholder="Subject" type="subject"/>
-</fieldset>
-</div>
-<div class="col-lg-12">
-<fieldset>
-<textarea class="form-control" id="message" name="message" placeholder="Message" required="" type="text"></textarea>
-</fieldset>
-</div>
-<div class="col-lg-12">
-<fieldset>
-<button class="main-button" id="form-submit" type="submit">Send Message Now</button>
-</fieldset>
-</div>
-</div>
-</div>
-<div class="col-lg-3">
-<div class="contact-info">
-<ul>
-<li>
-<div class="icon">
-<img alt="email icon" src="assets/images/contact-icon-01.png"/>
-</div>
-<a href="#">info@company.com</a>
-</li>
-<li>
-<div class="icon">
-<img alt="phone" src="assets/images/contact-icon-02.png"/>
-</div>
-<a href="#">+001-002-0034</a>
-</li>
-<li>
-<div class="icon">
-<img alt="location" src="assets/images/contact-icon-03.png"/>
-</div>
-<a href="#">26th Street, Digital Villa</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</form>
-</div>
-</div>
-</div>
+<div class="contact-us section" id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="0.5s">
+        <!-- Form action kısmını FastAPI arka plan yönlendirmesine bağladık -->
+        <form action="/iletisim-formu-gonder" id="contact" method="post">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+              <div class="section-heading">
+                <h6>İletişim</h6>
+                <h2>Bizimle <span>İletişime</span> Geçmek İçin <em>Aşağıdaki Formu Doldurun</em></h2>
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="row">
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input autocomplete="on" id="name" name="Ad" placeholder="Adınız" required="" type="text"/>
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input autocomplete="on" id="surname" name="Soyad" placeholder="Soyadınız" required="" type="text"/>
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input id="email" name="Email" pattern="[^ @]*@[^ @]*" placeholder="E-Posta Adresiniz" required="" type="email"/>
+                  </fieldset>
+                </div>
+                <div class="col-lg-6">
+                  <fieldset>
+                    <input autocomplete="on" id="subject" name="Konu" placeholder="Konu" type="text"/>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea class="form-control" id="message" name="Mesaj" placeholder="Mesajınız" required=""></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button class="main-button" id="form-submit" type="submit">Mesajı Şimdi Gönder</button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="contact-info">
+                <ul>
+                  <li>
+                    <div class="icon">
+                      <img alt="email icon" src="assets/images/contact-icon-01.png"/>
+                    </div>
+                    <a href="mailto:admin@e-denetim.com">admin@e-denetim.com</a>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <img alt="phone" src="assets/images/contact-icon-02.png"/>
+                    </div>
+                    <a href="tel:+905555555555">+90 555 555 55 55</a>
+                  </li>
+                  <li>
+                    <div class="icon">
+                      <img alt="location" src="assets/images/contact-icon-03.png"/>
+                    </div>
+                    <a href="#">Ankara, Türkiye</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
 <footer>
 <div class="container">
