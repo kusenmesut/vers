@@ -549,79 +549,112 @@ Fatura Yevmiye İkili ekran aynı anda  pivot ekranı çalışma, ADAT HESAPLAMA
 </div>
 </div>
 </div>
-<div class="contact-us section" id="contact-s
-<footer>
-<div class="container">
-<div class="row">
-<div class="col-lg-12">
-<p>e-denetim.com 
-          
-          <br/> <a href="" rel="nofollow" title="free CSS templates"></a></p>
+</div> </div> </div> <div class="contact-us section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="0.5s">
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="section-heading">
+                                <h6>Bize Ulaşın</h6>
+                                <h2>Bizimle <span>İletişime</span> Geçmek İçin Formu <em>Doldurun</em></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <fieldset>
+                                        <input id="name" name="name" placeholder="Adınız" required type="text"/>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset>
+                                        <input id="surname" name="surname" placeholder="Soyadınız" required type="text"/>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset>
+                                        <input id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="E-Posta Adresiniz" required type="email"/>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-6">
+                                    <fieldset>
+                                        <input id="subject" name="subject" placeholder="Konu Başlığı" required type="text"/>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Lütfen mesajınızı buraya yazın..." required rows="5"></textarea>
+                                    </fieldset>
+                                </div>
+                                <div class="col-lg-12">
+                                    <fieldset>
+                                        <button class="main-button" id="form-submit" type="submit">Mesajı Gönder</button>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="contact-info">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <img alt="email icon" src="assets/images/contact-icon-01.png"/>
+                                        </div>
+                                        <a href="mailto:bilgi@e-denetim.com">bilgi@e-denetim.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img alt="phone" src="assets/images/contact-icon-02.png"/>
+                                        </div>
+                                        <a href="tel:+908500000000">+90 (850) XXX XX XX</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <img alt="location" src="assets/images/contact-icon-03.png"/>
+                                        </div>
+                                        <a href="#">Teknopark, Türkiye</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-<div aria-hidden="true" class="modal fade" id="loginModal" tabindex="-1">
-<div class="modal-dialog modal-dialog-centered" style="max-width: 450px;">
-<div class="modal-content" style="border-radius: 15px; border: none; background-color: #f4f6f9; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-<div class="modal-header border-0 pb-0" style="position: absolute; right: 0; z-index: 999;">
-<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-</div>
-<div class="modal-body p-0">
-<iframe height="650px" scrolling="yes" src="https://ghostserver-rgyz.onrender.com/web-register" style="border: none; overflow: hidden;" width="100%">
-</iframe>
-</div>
-</div>
-</div>
-</div>
-</footer>
-<!-- Scripts -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/owl-carousel.js"></script>
-<script src="assets/js/animation.js"></script>
-<script src="assets/js/imagesloaded.js"></script>
-<script src="assets/js/custom.js"></script>
-</div></div></div></div></div></body>
-</html>
-<div aria-hidden="true" class="modal fade" id="loginModal" tabindex="-1">
-<div class="modal-dialog modal-dialog-centered" style="max-width: 450px;">
-<div class="modal-content" style="border-radius: 15px; border: none; background-color: #f4f6f9; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
-<div class="modal-header border-0 pb-0" style="position: absolute; right: 0; z-index: 999;">
-<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button>
-</div>
-<div class="modal-body p-0">
-<iframe height="650px" id="authIframe" scrolling="yes" src="https://ghostserver-rgyz.onrender.com/web-register" style="border: none; overflow: hidden;" width="100%">
-</iframe>
-</div>
-</div>
-</div>
-</div>
+
 <script>
-    // İframe her yüklendiğinde veya sayfa değiştirdiğinde bu kod çalışır
-    document.getElementById('authIframe').addEventListener('load', function() {
-        try {
-            // İframe'in içindeki sayfaya (HTML kodlarına) gizlice bakıyoruz
-            var iframeDoc = this.contentWindow.document;
-            
-            // Ekranda '.alert-success' sınıfına sahip yeşil bir mesaj kutusu var mı?
-            var successMessage = iframeDoc.querySelector('.alert-success');
-            
-            // Eğer mesaj kutusu varsa ve içinde "başarı" kelimesi geçiyorsa işlem tamamdı!
-            if (successMessage && successMessage.innerText.toLowerCase().includes('başarı')) {
-                
-                // 1. Ekrana o istediğin uyarıyı ver
-                alert("🎉 Hesabınız başarıyla oluşturuldu! Şimdi pencereyi kapatıp giriş yapabilirsiniz.");
-                
-                // 2. Uyarıya 'Tamam' dendiği an Pop-up'ı (Modal) otomatik kapat
-                var myModalEl = document.getElementById('loginModal');
-                var modal = bootstrap.Modal.getInstance(myModalEl);
-                if (modal) {
-                    modal.hide();
-                }
-            }
-        } catch (error) {
-            // Tarayıcı güvenlik engeli (Açıklamayı aşağıda okuyabilirsin)
-            console.log("CORS Engeli: ", error);
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault(); // Sayfanın zıplamasını engeller
+
+    const submitBtn = document.getElementById("form-submit");
+    submitBtn.disabled = true;
+    submitBtn.innerText = "Gönderiliyor, Lütfen Bekleyin...";
+
+    const formData = new FormData(this);
+
+    try {
+        const response = await fetch("/api/send-contact", {
+            method: "POST",
+            body: formData
+        });
+        const result = await response.json();
+
+        if (result.status === "success") {
+            alert("✅ Mesajınız başarıyla gönderildi!\nİlginiz için teşekkür ederiz. Sizinle en kısa sürede iletişime geçeceğiz.");
+            this.reset(); 
+        } else {
+            alert("❌ HATA: " + result.message);
         }
-    });
+    } catch (error) {
+        alert("❌ Sunucu ile bağlantı kurulamadı. Lütfen internetinizi kontrol edin.");
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Mesajı Gönder";
+    }
+});
 </script>
+<footer>
