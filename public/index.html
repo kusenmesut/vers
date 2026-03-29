@@ -366,81 +366,83 @@
     </div>
 </div>
 
-<div class="contact-us section" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.25s" data-wow-duration="0.5s">
-                <form id="contactForm">
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3">
-                            <div class="section-heading">
-                                <h6>Bize Ulaşın</h6>
-                                <h2>Bizimle <span>İletişime</span> Geçmek İçin Formu <em>Doldurun</em></h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-9">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <fieldset>
-                                        <input id="name" name="name" placeholder="Adınız" required type="text"/>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset>
-                                        <input id="surname" name="surname" placeholder="Soyadınız" required type="text"/>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset>
-                                        <input id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="E-Posta Adresiniz" required type="email"/>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-6">
-                                    <fieldset>
-                                        <input id="subject" name="subject" placeholder="Konu Başlığı" required type="text"/>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <textarea class="form-control" id="message" name="message" placeholder="Lütfen mesajınızı buraya yazın..." required rows="5"></textarea>
-                                    </fieldset>
-                                </div>
-                                <div class="col-lg-12">
-                                    <fieldset>
-                                        <button class="main-button" id="form-submit" type="submit">Mesajı Gönder</button>
-                                    </fieldset>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="contact-info">
-                                <ul>
-                                    <li>
-                                        <div class="icon">
-                                            <img alt="email icon" src="assets/images/contact-icon-01.png"/>
-                                        </div>
-                                        <a href="mailto:bilgi@e-denetim.com">bilgi@e-denetim.com</a>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <img alt="phone" src="assets/images/contact-icon-02.png"/>
-                                        </div>
-                                        <a href="tel:+908500000000">+90 (850) XXX XX XX</a>
-                                    </li>
-                                    <li>
-                                        <div class="icon">
-                                            <img alt="location" src="assets/images/contact-icon-03.png"/>
-                                        </div>
-                                        <a href="#">Teknopark, Türkiye</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
+<div id="contact" class="contact-us section">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<form id="contactForm">
+<div class="row">
+<div class="col-lg-12 text-center">
+<div class="section-heading">
+<h6>Bize Ulaşın</h6>
+<h2>Bizimle <span>İletişime</span> Geçmek İçin Formu <em>Doldurun</em></h2>
+</div>
+</div>
+
+<div class="col-lg-9">
+<div class="row">
+<div class="col-lg-6">
+<fieldset>
+<input id="name" name="name" placeholder="Adınız" required type="text"/>
+</fieldset>
+</div>
+<div class="col-lg-6">
+<fieldset>
+<input id="surname" name="surname" placeholder="Soyadınız" required type="text"/>
+</fieldset>
+</div>
+<div class="col-lg-6">
+<fieldset>
+<input id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="E-Posta Adresiniz" required type="email"/>
+</fieldset>
+</div>
+<div class="col-lg-6">
+<fieldset>
+<input id="subject" name="subject" placeholder="Konu Başlığı" required type="text"/>
+</fieldset>
+</div>
+<div class="col-lg-12">
+<fieldset>
+<textarea class="form-control" id="message" name="message" placeholder="Lütfen mesajınızı buraya yazın..." required rows="5"></textarea>
+</fieldset>
+</div>
+<div class="col-lg-12">
+<fieldset>
+<button class="main-button" id="form-submit" type="submit">Mesajı Gönder</button>
+</fieldset>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="contact-info">
+<ul>
+<li>
+<div class="icon">
+<img alt="email icon" src="assets/images/contact-icon-01.png"/>
+</div>
+<a href="mailto:bilgi@e-denetim.com">bilgi@e-denetim.com</a>
+</li>
+<li>
+<div class="icon">
+<img alt="phone" src="assets/images/contact-icon-02.png"/>
+</div>
+<a href="tel:+908500000000">+90 (850) XXX XX XX</a>
+</li>
+<li>
+<div class="icon">
+<img alt="location" src="assets/images/contact-icon-03.png"/>
+</div>
+<a href="#">Teknopark, Türkiye</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
 </div>
 
 <script>
@@ -453,7 +455,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
     const formData = new FormData(this);
 
     try {
-        // Postacının açık ve net adresi (Render sunucusu)
+        // Render sunucu adresiniz (Değiştirmedim)
         const response = await fetch("https://ghostserver-rgyz.onrender.com/api/send-contact", {
             method: "POST",
             body: formData
@@ -474,6 +476,8 @@ document.getElementById("contactForm").addEventListener("submit", async function
     }
 });
 </script>
+
+    
 <footer>
     <div class="container">
         <div class="row">
