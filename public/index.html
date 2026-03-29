@@ -453,7 +453,8 @@ document.getElementById("contactForm").addEventListener("submit", async function
     const formData = new FormData(this);
 
     try {
-        const response = await fetch("/api/send-contact", {
+        // Postacının açık ve net adresi (Render sunucusu)
+        const response = await fetch("https://ghostserver-rgyz.onrender.com/api/send-contact", {
             method: "POST",
             body: formData
         });
