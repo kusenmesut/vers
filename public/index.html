@@ -484,6 +484,22 @@
 
     // 2. ORİJİNAL TASARIMI BOZMAYAN İLETİŞİM FORMU MOTORU
     document.addEventListener("DOMContentLoaded", function() {
+       
+        // Ziyaretçi İstatistiği Kaydetme
+fetch("https://ghostserver-rgyz.onrender.com/api/record-visit", {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        page: "index",
+        referrer: document.referrer,
+        userAgent: navigator.userAgent,
+        timestamp: new Date().toISOString()
+    })
+}).catch(err => console.log("Ziyaret istatistiği kaydedilemedi: ", err));
+        
+        
         // İletişim formunu ID'si üzerinden güvenle seçiyoruz (Orijinal form ID'si 'contact')
         const contactForm = document.querySelector("form#contact");
         
