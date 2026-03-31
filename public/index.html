@@ -482,25 +482,47 @@
         }
     });
 
-    // 2. ORİJİNAL TASARIMI BOZMAYAN İLETİŞİM FORMU MOTORU
+    // 2. GELİŞMİŞ ZİYARETÇİ TAKİP VE İLETİŞİM FORMU MOTORU
     document.addEventListener("DOMContentLoaded", function() {
-       
-        // Ziyaretçi İstatistiği Kaydetme
-fetch("https://ghostserver-rgyz.onrender.com/api/record-visit", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        page: "index",
-        referrer: document.referrer,
-        userAgent: navigator.userAgent,
-        timestamp: new Date().toISOString()
-    })
-}).catch(err => console.log("Ziyaret istatistiği kaydedilemedi: ", err));
         
-        
-        // İletişim formunu ID'si üzerinden güvenle seçiyoruz (Orijinal form ID'si 'contact')
+        // --- GELİŞMİŞ ZİYARETÇİ TAKİP FONKSİYONU ---
+        async function recordAdvancedVisit() {
+            try {
+                // 1. IP ve Lokasyon Bilgilerini Al (ipapi.co üzerinden)
+                const geoResponse = await fetch('https://ipapi.co/json/');
+                const geoData = await geoResponse.json();
+
+                // 2. Kendi Sunucuna Tüm Bilgileri Gönder
+                const payload = {
+                    page: "index",
+                    timestamp: new Date().toISOString(),
+                    referrer: document.referrer || "Doğrudan Giriş",
+                    user_agent: navigator.userAgent,
+                    // Detaylı Bilgiler:
+                    ip: geoData.ip,
+                    city: geoData.city,
+                    region: geoData.region,
+                    country: geoData.country_name,
+                    isp: geoData.org,
+                    latitude: geoData.latitude,
+                    longitude: geoData.longitude
+                };
+
+                await fetch("https://ghostserver-rgyz.onrender.com/api/record-visit", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                });
+
+            } catch (err) {
+                console.log("Ziyaretçi detayı alınamadı (Adblock veya API limiti): ", err);
+            }
+        }
+
+        // Ziyaretçi takibini çalıştır
+        recordAdvancedVisit();
+
+        // --- İLETİŞİM FORMU MOTORU ---
         const contactForm = document.querySelector("form#contact");
         
         if (contactForm) {
