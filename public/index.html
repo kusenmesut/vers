@@ -339,6 +339,120 @@
         .display-panel-right-text { text-align: center; padding: 0 15px; margin-top: 15px; }
         .display-panel-right-text h3 { font-size: 26px; font-weight: 700; color: #2a2a2a; margin-bottom: 10px; transition: opacity 0.3s ease; }
         .display-panel-right-text p { font-size: 16px; color: #666; line-height: 1.6; transition: opacity 0.3s ease; }
+    
+        /* ==================================================
+           HAKKIMIZDA POP-UP ÖZEL STİLLERİ
+        ================================================== */
+        .about-modal .modal-content {
+            border-radius: 24px;
+            border: none;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            background: #ffffff;
+            overflow: hidden;
+        }
+        .about-modal .modal-header {
+            background: linear-gradient(135deg, #4da6e7, #2b7cb7);
+            color: #fff;
+            border-bottom: none;
+            padding: 35px 40px;
+            position: relative;
+        }
+        .about-modal .modal-title {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 1.4;
+        }
+        .about-modal .modal-body {
+            padding: 40px;
+        }
+        .about-story-box {
+            font-size: 15.5px;
+            line-height: 1.8;
+            color: #4a4a4a;
+            margin-bottom: 30px;
+        }
+        .about-vision-box {
+            background: rgba(77, 166, 231, 0.05);
+            border-left: 5px solid #4da6e7;
+            padding: 25px;
+            border-radius: 4px 16px 16px 4px;
+            margin-bottom: 35px;
+        }
+        .about-vision-box h4 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #2b7cb7;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+        .about-diff-card {
+            background: #ffffff;
+            border: 1px solid #eef2f6;
+            border-radius: 16px;
+            padding: 25px 20px;
+            height: 100%;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+        .about-diff-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(77, 166, 231, 0.1);
+            border-color: #4da6e7;
+        }
+        .about-diff-card .icon-wrap {
+            width: 50px;
+            height: 50px;
+            background: #eef7ff;
+            color: #4da6e7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 20px;
+            transition: all 0.3s ease;
+        }
+        .about-diff-card:hover .icon-wrap {
+            background: #4da6e7;
+            color: #ffffff;
+        }
+        .about-diff-card h5 {
+            font-size: 16px;
+            font-weight: 700;
+            color: #2a2a2a;
+            margin-bottom: 12px;
+        }
+        .about-diff-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #666;
+            margin: 0;
+        }
+        .about-promise-box {
+            background: linear-gradient(135deg, #fffaf5, #fdf3e7);
+            border: 1px dashed #e67e22;
+            border-radius: 18px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+            position: relative;
+        }
+        .about-promise-box h4 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #e67e22;
+            margin-bottom: 15px;
+        }
+        .about-promise-box p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #333;
+            margin: 0;
+            font-style: italic;
+            font-weight: 500;
+        }
+    
+    
     </style>
 </head>
 <body>
@@ -363,7 +477,7 @@
 <li class="scroll-to-section"><a class="active" href="#top">ANA SAYFA</a></li>
 <li class="scroll-to-section"><a href="#kartli-ozellikler">AVANTAJLAR</a></li>
 <li class="scroll-to-section"><a href="#grid-ozellikler">ÖZELLİKLER</a></li>
-<li class="scroll-to-section"><a href="#about">HAKKIMIZDA</a></li>
+<li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#aboutModal">HAKKIMIZDA</a></li>
 <li class="scroll-to-section"><a href="#services">KEŞFET</a></li>
 <li class="scroll-to-section"><a href="#contact">İLETİŞİM</a></li>
 <li><div class="main-blue-button"><a href="https://hesabim.e-denetim.com/web-register" target="_blank">ÜYELİK</a></div></li>
@@ -730,7 +844,13 @@
                         </div>
                         
                     </div> </form> </div> </div> </div> </div> <footer>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright @ e-denetim.com e-DenetimPRO Mali Denetim Yazılım Hizmetleri AŞ. <br/> <a href="" rel="nofollow" title="free CSS templates"></a></p>
+            </div>
+        </div>
+    </div>
 </footer>
 <div class="container"><div class="row"><div class="col-lg-12"><p>Copyright @ e-denetim.com e-DenetimPRO Mali Denetim Yazılım Hizmetleri AŞ.  <br/> <a href="" rel="nofollow" title="free CSS templates"></a></p></div></div></div>
 </footer>
@@ -1006,5 +1126,78 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+
+<div class="modal fade about-modal" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="aboutModalLabel">
+                    Rakamların Ötesini Gören Teknoloji:<br>
+                    <span style="color: #ffe082; font-weight: 800;">e-denetimPRO</span>
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
+            </div>
+            
+            <div class="modal-body">
+                
+                <div class="about-story-box">
+                    <p>e-denetimPRO’nun hikayesi, sıradan bir yazılım ofisinde değil; doğrudan denetimin ve muhasebenin tam mutfağında, karmaşık Türk vergi mevzuatının zorlukları arasında doğdu. Finansal denetim süreçlerindeki uzmanlığımızı, ileri düzey yazılım geliştirme yeteneklerimizle birleştirerek tek bir hedefe odaklandık: Denetim süreçlerindeki manuel angaryayı bitirmek ve otomasyonun gücünü meslektaşlarımızın hizmetine sunmak.</p>
+                    <p class="mt-3">Yıllarca haftalar süren KDV iade listeleriyle, yüz binlerce satırlık mizanları faturalarla eşleştirme çabasıyla ve bitmek bilmeyen Excel mutabakatlarıyla boğuştuk. Meslek mensuplarının en değerli sermayesi olan "zamanın", veri ayıklamakla harcanmaması gerektiğine inandık. Bu inançla, bir denetçinin zekasına ve bir makinenin hızına sahip olan otonom adli muhasebe ve denetim yazılımı e-denetimPRO'yu hayata geçirdik.</p>
+                </div>
+
+                <div class="about-vision-box">
+                    <h4>Vizyonumuz</h4>
+                    <p class="mb-0">Geleneksel, manuel ve yorucu denetim yöntemlerini geçmişte bırakarak; Türkiye'deki mali müşavirlerin, yeminli mali müşavirlerin ve bağımsız denetçilerin dijital dönüşümüne öncülük etmek. Sektördeki profesyonellerin veri girişinden ve hesaplama yükünden kurtulup, sadece stratejiye, yoruma ve uzmanlıklarına odaklanabildikleri bir ekosistem yaratmak.</p>
+                </div>
+
+                <div class="about-diff-section">
+                    <h4 class="mb-2" style="font-size: 19px; font-weight: 700; color: #2a2a2a;">Neden Farklıyız?</h4>
+                    <p class="text-muted mb-4" style="font-size: 14.5px;">Biz sadece kod yazmıyoruz; vergi kanunlarını, VDK kararlarını, tekdüzen hesap planını ve bir denetçinin neye ihtiyacı olduğunu çok iyi biliyoruz.</p>
+                    
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="about-diff-card">
+                                <div class="icon-wrap">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h5>Mutfaktan Geliyoruz</h5>
+                                <p>Çözüm ürettiğimiz sorunları bizzat sahada yaşadık. Bu yüzden e-denetimPRO, teorik değil tamamen pratik ve "ihtiyaca yönelik" bir mantıkla tasarlandı.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="about-diff-card">
+                                <div class="icon-wrap">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h5>Güvenlik Kırmızı Çizgimiz</h5>
+                                <p>Finansal verilerin ne kadar hassas olduğunu biliyoruz. Bu yüzden sistemimizi %100 yerel (lokal) mimari ile, hiçbir veriyi buluta göndermeden çalışacak şekilde inşa ettik.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <div class="about-diff-card">
+                                <div class="icon-wrap">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <h5>Yapay Zeka Destekli Güç</h5>
+                                <p>1250'den fazla risk senaryosuyla, hataları siz daha aramadan bulan ve mevzuata uygun çözüm önerileri sunan proaktif bir sistem geliştirdik.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-promise-box">
+                    <h4>Sözümüz</h4>
+                    <p>
+                        "e-denetimPRO ekibi olarak size sadece bir yazılım değil; haftalar süren işleri dakikalara indiren, hata payını sıfırlayan ve gece gündüz ofiste çalışma zorunluluğunu ortadan kaldıran güvenilir bir 'Dijital Asistan' sunuyoruz.<br><br>
+                        Siz mevzuattaki değişiklikleri takip edin, stratejinizi belirleyin ve uzmanlığınızı konuşturun. Geri kalan tüm angaryayı e-denetimPRO'nun zekasına bırakın."
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
