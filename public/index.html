@@ -342,6 +342,11 @@
     </style>
 </head>
 <body>
+<div class="lightbox-overlay" id="imageLightbox" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img alt="Büyük Görsel" id="lightboxImage" src=""/>
+</div>
+
 <div class="js-preloader" id="js-preloader">
 <div class="preloader-inner">
 <span class="dot"></span>
@@ -678,40 +683,61 @@
 <div class="container"><div class="row"><div class="col-lg-6"><div class="left-image wow fadeInLeft" data-wow-delay="0.5s"><img alt="" src="assets/images/ww.png"/></div></div><div class="col-lg-6 align-self-center wow fadeInRight" data-wow-delay="0.5s"><div class="section-heading"><h6>EĞİTİM:</h6><h2><em> e-denetimPRO</em> kullanımı hakkında detaylı eğitimler verilmektedir. <span></span></h2></div></div></div></div>
 </div>
 <div class="contact-us section" id="contact">
-<div class="container"><div class="row"><div class="col-lg-12 wow fadeInUp" data-wow-delay="0.25s">
-<form id="contact" method="post"> <div class="row">
-<div class="col-lg-6 offset-lg-3"><div class="section-heading"><h6>İLETİŞİM FORMU</h6><h2>Bizimle <span>İletişime</span> <em>Geçiniz...</em></h2></div></div>
-<div class="col-lg-9"><div class="row">
-<div class="col-lg-6"><fieldset><input autocomplete="on" id="name" name="name" placeholder="Ad" required="" type="text"/></fieldset></div>
-<div class="col-lg-6"><fieldset><input autocomplete="on" id="surname" name="surname" placeholder="Soyad" required="" type="text"/></fieldset></div>
-<div class="col-lg-6"><fieldset><input id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" type="text"/></fieldset></div>
-<div class="col-lg-6"><fieldset><input autocomplete="on" id="subject" name="subject" placeholder="Konu" type="text"/></fieldset></div>
-<div class="col-lg-12"><fieldset><textarea class="form-control" id="message" name="message" placeholder="Mesajınız" required=""></textarea></fieldset></div>
-<div class="col-lg-12"><fieldset><button class="main-button" id="form-submit" type="submit">GÖNDER</button></fieldset></div>
-</div></div>
-<div class="col-lg-3">
-    <div class="contact-info">
-        <ul>
-            <li>
-                <div class="icon"><img alt="email icon" src="assets/images/contact-icon-01.png"/></div>
-                <a href="mailto:bilgi@e-denetim.com">bilgi@e-denetim.com</a>
-            </li>
-            <li>
-                <div class="icon"><img alt="phone" src="assets/images/contact-icon-02.png"/></div>
-                <a href="tel:+905462983666">+90 546 298 3666</a>
-            </li>
-            <li>
-                <div class="icon"><img alt="whatsapp icon" src="assets/images/whatapp.png"/></div>
-                <a href="https://wa.me/905462983666" target="_blank">WhatsApp İletişim</a>
-            </li>
-            <li>
-                <div class="icon"><img alt="location" src="assets/images/contact-icon-03.png"/></div>
-                <a href="#">Ankara-Teknokent</a>
-            </li>
-        </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.25s">
+                <form id="contact" method="post"> 
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3">
+                            <div class="section-heading">
+                                <h6>İLETİŞİM FORMU</h6>
+                                <h2>Bizimle <span>İletişime</span> <em>Geçiniz...</em></h2>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-6"><fieldset><input autocomplete="on" id="name" name="name" placeholder="Ad" required="" type="text"/></fieldset></div>
+                                <div class="col-lg-6"><fieldset><input autocomplete="on" id="surname" name="surname" placeholder="Soyad" required="" type="text"/></fieldset></div>
+                                <div class="col-lg-6"><fieldset><input id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" type="text"/></fieldset></div>
+                                <div class="col-lg-6"><fieldset><input autocomplete="on" id="subject" name="subject" placeholder="Konu" type="text"/></fieldset></div>
+                                <div class="col-lg-12"><fieldset><textarea class="form-control" id="message" name="message" placeholder="Mesajınız" required=""></textarea></fieldset></div>
+                                <div class="col-lg-12"><fieldset><button class="main-button" id="form-submit" type="submit">GÖNDER</button></fieldset></div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3">
+                            <div class="contact-info">
+                                <ul>
+                                    <li>
+                                        <div class="icon"><img alt="email icon" src="assets/images/contact-icon-01.png"/></div>
+                                        <a href="mailto:bilgi@e-denetim.com">bilgi@e-denetim.com</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img alt="phone" src="assets/images/contact-icon-02.png"/></div>
+                                        <a href="tel:+905462983666">+90 546 298 3666</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img alt="whatsapp icon" src="assets/images/whatapp.png"/></div>
+                                        <a href="https://wa.me/905462983666" target="_blank">WhatsApp İletişim</a>
+                                    </li>
+                                    <li>
+                                        <div class="icon"><img alt="location" src="assets/images/contact-icon-03.png"/></div>
+                                        <a href="#">Ankara-Teknokent</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div> </form> </div> </div> </div> </div> <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Copyright @ e-denetim.com e-DenetimPRO Mali Denetim Yazılım Hizmetleri AŞ. <br/> <a href="" rel="nofollow" title="free CSS templates"></a></p>
+            </div>
+        </div>
     </div>
-</div>
-<footer>
+</footer>
 <div class="container"><div class="row"><div class="col-lg-12"><p>Copyright @ e-denetim.com e-DenetimPRO Mali Denetim Yazılım Hizmetleri AŞ.  <br/> <a href="" rel="nofollow" title="free CSS templates"></a></p></div></div></div>
 </footer>
 <div aria-hidden="true" class="modal fade" id="loginModal" tabindex="-1">
@@ -986,10 +1012,5 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-<div class="lightbox-overlay" id="imageLightbox" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img alt="Büyük Görsel" id="lightboxImage" src=""/>
-</div>
-
 </body>
 </html>
