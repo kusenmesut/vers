@@ -270,38 +270,41 @@
         }
 
         /* ==================================================
-           LIGHTBOX (RESİM BÜYÜTME) STİLLERİ
+           LIGHTBOX (RESİM BÜYÜTME) STİLLERİ - KESİN ÇÖZÜM
         ================================================== */
-        /* Monitör içindeki resmin tıklanabilir olduğunu gösteren büyüteç imleci */
+        /* Sadece resmin değil, monitördeki tüm ekranın tıklanabilir olmasını sağlar */
+        .monitor-screen {
+            cursor: zoom-in !important;
+            pointer-events: auto !important; 
+        }
+        
         .monitor-screen img {
-            cursor: zoom-in; 
+            pointer-events: none; /* Tıklamayı direkt ekran algılasın */
         }
 
-        /* ==================================================
-           LIGHTBOX (RESİM BÜYÜTME) STİLLERİ - POP-UP ÇÖZÜMÜ
-        ================================================== */
         .lightbox-overlay {
-            display: none; /* Başlangıçta gizli, JS ile flex olacak */
+            display: none !important; /* Başlangıçta kesin gizli */
             position: fixed !important;
             top: 0 !important;
             left: 0 !important;
             right: 0 !important;
             bottom: 0 !important;
-            width: 100% !important;
-            height: 100% !important;
-            background-color: rgba(0, 0, 0, 0.9) !important; /* Arka plan koyuluğu */
-            z-index: 2147483647 !important; /* Ekranda her şeyin ama her şeyin üstünde olması için maksimum değer */
+            width: 100vw !important; /* Tam ekran genişliği */
+            height: 100vh !important; /* Tam ekran yüksekliği */
+            background-color: rgba(0, 0, 0, 0.95) !important; 
+            z-index: 2147483647 !important; /* Sayfadaki her şeyin en üstüne çıkartır */
             align-items: center !important;
             justify-content: center !important;
             margin: 0 !important;
             padding: 0 !important;
             opacity: 0;
             transition: opacity 0.3s ease;
+            cursor: zoom-out;
         }
 
         .lightbox-overlay img {
-            max-width: 85% !important;
-            max-height: 85vh !important;
+            max-width: 90vw !important;
+            max-height: 90vh !important;
             border-radius: 10px;
             box-shadow: 0 10px 50px rgba(0,0,0,0.8);
             transform: scale(0.8);
@@ -731,33 +734,38 @@
 <script src="assets/js/custom.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-// --- LIGHTBOX (RESİM BÜYÜTME) MANTIĞI ---
+// --- LIGHTBOX (RESİM BÜYÜTME) MANTIĞI - KESİN ÇÖZÜM ---
+    const monitorScreen = document.querySelector('.monitor-screen'); // Artık sadece resme değil ekrana odaklanıyoruz
     const monitorImage = document.getElementById('gridMainIcon');
     const lightbox = document.getElementById('imageLightbox');
     const lightboxImg = document.getElementById('lightboxImage');
 
-    // 1. Bilgisayar ekranındaki resme tıklanınca
-    if(monitorImage) {
-        monitorImage.addEventListener('click', function(e) {
-            e.stopPropagation(); // DÜZELTME: Arka plan tıklamalarıyla çakışmayı önler
-            lightboxImg.src = this.src; // Sağdaki resmin linkini al, büyüyecek resme ver
-            lightbox.style.display = 'flex'; // Arka planı görünür yap
+    // 1. Bilgisayar ekranının HERHANGİ BİR YERİNE tıklanınca
+    if(monitorScreen && monitorImage) {
+        monitorScreen.addEventListener('click', function(e) {
+            e.stopPropagation(); 
             
-            // Animasyonun çalışması için tarayıcıya ufak bir süre tanıyoruz
+            // Aktif olan resmin linkini alıp, büyüyecek pop-up resmine aktarıyoruz
+            lightboxImg.src = monitorImage.src; 
+            
+            // Arka planı kesin olarak görünür ve flex yapıyoruz
+            lightbox.style.setProperty('display', 'flex', 'important'); 
+            
+            // Animasyonun çalışması için tarayıcıya çok kısa süre tanıyoruz
             setTimeout(() => {
                 lightbox.classList.add('show');
-            }, 50); // 10ms olan süreyi 50ms yaptık (sorunsuz açılması için)
+            }, 50); 
         });
     }
 
-    // 2. Büyüyen resme veya siyah alana tıklayınca kapatma fonksiyonu
+    // 2. Büyüyen resme veya siyah alana tıklayınca kapatma
     window.closeLightbox = function() {
-        lightbox.classList.remove('show'); // Animasyonlu şekilde saydamlaştır
+        lightbox.classList.remove('show'); 
         
-        // Saydamlaşma bitince tamamen gizle (ekranda tıklamaları engellemesin)
+        // Şeffaflaşma bitince ekrandan tamamen kaldırıyoruz
         setTimeout(() => {
-            lightbox.style.display = 'none';
-        }, 300); // 300ms CSS'teki transition süresiyle aynı
+            lightbox.style.setProperty('display', 'none', 'important');
+        }, 300); 
     };
 
 
