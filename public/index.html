@@ -237,10 +237,12 @@
             display: block;
             position: relative;
             z-index: 1; 
+            pointer-events: none; /* DÜZELTME: Çerçevenin şeffaf kısmının tıklamayı bloke etmesini önler */
         }
+        
         .monitor-screen {
             position: absolute;
-            z-index: 2; 
+            z-index: 5; /* DÜZELTME: Resmin üstte kalmasını garantiler */
             /* Monitör çerçevesindeki beyaz ekranın konumları */
             top: 17%; 
             left: 7%; 
@@ -251,11 +253,12 @@
             
             /* İÇ RESMİ KÜÇÜLTME VE ORTALAMA AYARLARI */
             box-sizing: border-box;
-            padding: 0,01%; /* İç boşluk: Resmi küçültmek için bu değeri artırabilirsin (örn: 15% veya 20%) */
+            padding: 0; /* DÜZELTME: '0,01%' css hatasına yol açtığı için 0 yapıldı (iç boşluk isterseniz 5% vs yazabilirsiniz) */
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            pointer-events: auto; /* DÜZELTME: Tıklanabilirliği aktif eder */
         }
         
         .monitor-screen img {
@@ -729,14 +732,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 1. Bilgisayar ekranındaki resme tıklanınca
     if(monitorImage) {
-        monitorImage.addEventListener('click', function() {
+        monitorImage.addEventListener('click', function(e) {
+            e.stopPropagation(); // DÜZELTME: Arka plan tıklamalarıyla çakışmayı önler
             lightboxImg.src = this.src; // Sağdaki resmin linkini al, büyüyecek resme ver
             lightbox.style.display = 'flex'; // Arka planı görünür yap
             
-            // Animasyonun çalışması için milisaniyelik bir gecikme ekliyoruz
+            // Animasyonun çalışması için tarayıcıya ufak bir süre tanıyoruz
             setTimeout(() => {
                 lightbox.classList.add('show');
-            }, 10);
+            }, 50); // 10ms olan süreyi 50ms yaptık (sorunsuz açılması için)
         });
     }
 
@@ -749,6 +753,8 @@ document.addEventListener("DOMContentLoaded", function() {
             lightbox.style.display = 'none';
         }, 300); // 300ms CSS'teki transition süresiyle aynı
     };
+
+	
     // --- 1. DİKEY (KARTLI) SAYFALAMA MANTIĞI ---
     const vertItems = document.querySelectorAll('.vert-item');
     const vertItemsPerPage = 5;
