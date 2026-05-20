@@ -457,10 +457,9 @@
 </head>
 <body>
 <div class="lightbox-overlay" id="imageLightbox" onclick="closeLightbox()">
-    <span class="lightbox-close">&times;</span>
-    <img alt="Büyük Görsel" id="lightboxImage" src=""/>
+<span class="lightbox-close">×</span>
+<img alt="Büyük Görsel" id="lightboxImage" src=""/>
 </div>
-
 <div class="js-preloader" id="js-preloader">
 <div class="preloader-inner">
 <span class="dot"></span>
@@ -477,7 +476,7 @@
 <li class="scroll-to-section"><a class="active" href="#top">ANA SAYFA</a></li>
 <li class="scroll-to-section"><a href="#kartli-ozellikler">AVANTAJLAR</a></li>
 <li class="scroll-to-section"><a href="#grid-ozellikler">ÖZELLİKLER</a></li>
-<li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#aboutModal">HAKKIMIZDA</a></li>
+<li><a data-bs-target="#aboutModal" data-bs-toggle="modal" href="javascript:void(0)">HAKKIMIZDA</a></li>
 <li class="scroll-to-section"><a href="#services">KEŞFET</a></li>
 <li class="scroll-to-section"><a href="#contact">İLETİŞİM</a></li>
 <li><div class="main-blue-button"><a href="https://hesabim.e-denetim.com/web-register" target="_blank">ÜYELİK</a></div></li>
@@ -685,7 +684,7 @@
 </div>
 </div>
 </div>
-</div>
+<div class="container" style="padding-bottom: 40px; margin-top: 30px; text-align: center;"><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="true" frameborder="0" height="450px" src="https://www.youtube.com/embed/stUJSkFI_dw" style="border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 100%;" width="75%"></iframe></div></div>
 <div class="our-services section" id="services">
 <div class="container">
 <div class="row">
@@ -797,61 +796,57 @@
 <div class="container"><div class="row"><div class="col-lg-6"><div class="left-image wow fadeInLeft" data-wow-delay="0.5s"><img alt="" src="assets/images/ww.png"/></div></div><div class="col-lg-6 align-self-center wow fadeInRight" data-wow-delay="0.5s"><div class="section-heading"><h6>EĞİTİM:</h6><h2><em> e-denetimPRO</em> kullanımı hakkında detaylı eğitimler verilmektedir. <span></span></h2></div></div></div></div>
 </div>
 <div class="contact-us section" id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.25s">
-                <form id="contact" method="post"> 
-                    <div class="row">
-                        <div class="col-lg-6 offset-lg-3">
-                            <div class="section-heading">
-                                <h6>İLETİŞİM FORMU</h6>
-                                <h2>Bizimle <span>İletişime</span> <em>Geçiniz...</em></h2>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-9">
-                            <div class="row">
-                                <div class="col-lg-6"><fieldset><input autocomplete="on" id="name" name="name" placeholder="Ad" required="" type="text"/></fieldset></div>
-                                <div class="col-lg-6"><fieldset><input autocomplete="on" id="surname" name="surname" placeholder="Soyad" required="" type="text"/></fieldset></div>
-                                <div class="col-lg-6"><fieldset><input id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" type="text"/></fieldset></div>
-                                <div class="col-lg-6"><fieldset><input autocomplete="on" id="subject" name="subject" placeholder="Konu" type="text"/></fieldset></div>
-                                <div class="col-lg-12"><fieldset><textarea class="form-control" id="message" name="message" placeholder="Mesajınız" required=""></textarea></fieldset></div>
-                                <div class="col-lg-12"><fieldset><button class="main-button" id="form-submit" type="submit">GÖNDER</button></fieldset></div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3">
-                            <div class="contact-info">
-                                <ul>
-                                    <li>
-                                        <div class="icon"><img alt="email icon" src="assets/images/contact-icon-01.png"/></div>
-                                        <a href="mailto:bilgi@e-denetim.com">bilgi@e-denetim.com</a>
-                                    </li>
-                                    <li>
-                                        <div class="icon"><img alt="phone" src="assets/images/contact-icon-02.png"/></div>
-                                        <a href="tel:+905462983666">+90 546 298 3666</a>
-                                    </li>
-                                    <li>
-                                        <div class="icon"><img alt="whatsapp icon" src="assets/images/whatapp.png"/></div>
-                                        <a href="https://wa.me/905462983666" target="_blank">WhatsApp İletişim</a>
-                                    </li>
-                                    <li>
-                                        <div class="icon"><img alt="location" src="assets/images/contact-icon-03.png"/></div>
-                                        <a href="#">Mustafa Kemal Mah. Şehit Öğretmen Şenay Aybüke Yalçın Cad. 19 Sitesi İlhan Plaza No:19/8 Çankaya/Ankara</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                    </div> </form> </div> </div> </div> </div> <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <p>Copyright @ e-denetim.com e-DenetimPRO Mali Denetim Yazılım Hizmetleri AŞ. <br/> <a href="" rel="nofollow" title="free CSS templates"></a></p>
-            </div>
-        </div>
-    </div>
-
+<div class="container">
+<div class="row">
+<div class="col-lg-12 wow fadeInUp" data-wow-delay="0.25s">
+<form id="contact" method="post">
+<div class="row">
+<div class="col-lg-6 offset-lg-3">
+<div class="section-heading">
+<h6>İLETİŞİM FORMU</h6>
+<h2>Bizimle <span>İletişime</span> <em>Geçiniz...</em></h2>
+</div>
+</div>
+<div class="col-lg-9">
+<div class="row">
+<div class="col-lg-6"><fieldset><input autocomplete="on" id="name" name="name" placeholder="Ad" required="" type="text"/></fieldset></div>
+<div class="col-lg-6"><fieldset><input autocomplete="on" id="surname" name="surname" placeholder="Soyad" required="" type="text"/></fieldset></div>
+<div class="col-lg-6"><fieldset><input id="email" name="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" type="text"/></fieldset></div>
+<div class="col-lg-6"><fieldset><input autocomplete="on" id="subject" name="subject" placeholder="Konu" type="text"/></fieldset></div>
+<div class="col-lg-12"><fieldset><textarea class="form-control" id="message" name="message" placeholder="Mesajınız" required=""></textarea></fieldset></div>
+<div class="col-lg-12"><fieldset><button class="main-button" id="form-submit" type="submit">GÖNDER</button></fieldset></div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="contact-info">
+<ul>
+<li>
+<div class="icon"><img alt="email icon" src="assets/images/contact-icon-01.png"/></div>
+<a href="mailto:bilgi@e-denetim.com">bilgi@e-denetim.com</a>
+</li>
+<li>
+<div class="icon"><img alt="phone" src="assets/images/contact-icon-02.png"/></div>
+<a href="tel:+905462983666">+90 546 298 3666</a>
+</li>
+<li>
+<div class="icon"><img alt="whatsapp icon" src="assets/images/whatapp.png"/></div>
+<a href="https://wa.me/905462983666" target="_blank">WhatsApp İletişim</a>
+</li>
+<li>
+<div class="icon"><img alt="location" src="assets/images/contact-icon-03.png"/></div>
+<a href="#">Mustafa Kemal Mah. Şehit Öğretmen Şenay Aybüke Yalçın Cad. 19 Sitesi İlhan Plaza No:19/8 Çankaya/Ankara</a>
+</li>
+</ul>
+</div>
+</div>
+</div> </form> </div> </div> </div> </div> <footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<p>Copyright @ e-denetim.com e-DenetimPRO Mali Denetim Yazılım Hizmetleri AŞ. <br/> <a href="" rel="nofollow" title="free CSS templates"></a></p>
+</div>
+</div>
+</div>
 <div aria-hidden="true" class="modal fade" id="loginModal" tabindex="-1">
 <div class="modal-dialog modal-dialog-centered" style="max-width: 450px;">
 <div class="modal-content" style="border-radius: 15px; border: none; background-color: #f4f6f9; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
@@ -1124,78 +1119,68 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
-
-<div class="modal fade about-modal" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="aboutModalLabel">
-                    Rakamların Ötesini Gören Teknoloji:<br>
-                    <span style="color: #ffe082; font-weight: 800;">e-denetimPRO</span>
-                </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Kapat"></button>
-            </div>
-            
-            <div class="modal-body">
-                
-                <div class="about-story-box">
-                    <p>e-denetimPRO’nun hikayesi, sıradan bir yazılım ofisinde değil; doğrudan denetimin ve muhasebenin tam mutfağında, karmaşık Türk vergi mevzuatının zorlukları arasında doğdu. Finansal denetim süreçlerindeki uzmanlığımızı, ileri düzey yazılım geliştirme yeteneklerimizle birleştirerek tek bir hedefe odaklandık: Denetim süreçlerindeki manuel angaryayı bitirmek ve otomasyonun gücünü meslektaşlarımızın hizmetine sunmak.</p>
-                    <p class="mt-3">Yıllarca haftalar süren KDV iade listeleriyle, yüz binlerce satırlık mizanları faturalarla eşleştirme çabasıyla ve bitmek bilmeyen Excel mutabakatlarıyla boğuştuk. Meslek mensuplarının en değerli sermayesi olan "zamanın", veri ayıklamakla harcanmaması gerektiğine inandık. Bu inançla, bir denetçinin zekasına ve bir makinenin hızına sahip olan otonom adli muhasebe ve denetim yazılımı e-denetimPRO'yu hayata geçirdik.</p>
-                </div>
-
-                <div class="about-vision-box">
-                    <h4>Vizyonumuz</h4>
-                    <p class="mb-0">Geleneksel, manuel ve yorucu denetim yöntemlerini geçmişte bırakarak; Türkiye'deki mali müşavirlerin, yeminli mali müşavirlerin ve bağımsız denetçilerin dijital dönüşümüne öncülük etmek. Sektördeki profesyonellerin veri girişinden ve hesaplama yükünden kurtulup, sadece stratejiye, yoruma ve uzmanlıklarına odaklanabildikleri bir ekosistem yaratmak.</p>
-                </div>
-
-                <div class="about-diff-section">
-                    <h4 class="mb-2" style="font-size: 19px; font-weight: 700; color: #2a2a2a;">Neden Farklıyız?</h4>
-                    <p class="text-muted mb-4" style="font-size: 14.5px;">Biz sadece kod yazmıyoruz; vergi kanunlarını, VDK kararlarını, tekdüzen hesap planını ve bir denetçinin neye ihtiyacı olduğunu çok iyi biliyoruz.</p>
-                    
-                    <div class="row g-4">
-                        <div class="col-md-4">
-                            <div class="about-diff-card">
-                                <div class="icon-wrap">
-                                    <i class="fas fa-utensils"></i>
-                                </div>
-                                <h5>Mutfaktan Geliyoruz</h5>
-                                <p>Çözüm ürettiğimiz sorunları bizzat sahada yaşadık. Bu yüzden e-denetimPRO, teorik değil tamamen pratik ve "ihtiyaca yönelik" bir mantıkla tasarlandı.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4">
-                            <div class="about-diff-card">
-                                <div class="icon-wrap">
-                                    <i class="fas fa-shield-alt"></i>
-                                </div>
-                                <h5>Güvenlik Kırmızı Çizgimiz</h5>
-                                <p>Finansal verilerin ne kadar hassas olduğunu biliyoruz. Bu yüzden sistemimizi %100 yerel (lokal) mimari ile, hiçbir veriyi buluta göndermeden çalışacak şekilde inşa ettik.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-4">
-                            <div class="about-diff-card">
-                                <div class="icon-wrap">
-                                    <i class="fas fa-brain"></i>
-                                </div>
-                                <h5>Yapay Zeka Destekli Güç</h5>
-                                <p>1250'den fazla risk senaryosuyla, hataları siz daha aramadan bulan ve mevzuata uygun çözüm önerileri sunan proaktif bir sistem geliştirdik.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="about-promise-box">
-                    <h4>Sözümüz</h4>
-                    <p>
-                        "e-denetimPRO ekibi olarak size sadece bir yazılım değil; haftalar süren işleri dakikalara indiren, hata payını sıfırlayan ve gece gündüz ofiste çalışma zorunluluğunu ortadan kaldıran güvenilir bir 'Dijital Asistan' sunuyoruz.<br><br>
+<div aria-hidden="true" aria-labelledby="aboutModalLabel" class="modal fade about-modal" id="aboutModal" tabindex="-1">
+<div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="aboutModalLabel">
+                    Rakamların Ötesini Gören Teknoloji:<br/>
+<span style="color: #ffe082; font-weight: 800;">e-denetimPRO</span>
+</h5>
+<button aria-label="Kapat" class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div class="about-story-box">
+<p>e-denetimPRO’nun hikayesi, sıradan bir yazılım ofisinde değil; doğrudan denetimin ve muhasebenin tam mutfağında, karmaşık Türk vergi mevzuatının zorlukları arasında doğdu. Finansal denetim süreçlerindeki uzmanlığımızı, ileri düzey yazılım geliştirme yeteneklerimizle birleştirerek tek bir hedefe odaklandık: Denetim süreçlerindeki manuel angaryayı bitirmek ve otomasyonun gücünü meslektaşlarımızın hizmetine sunmak.</p>
+<p class="mt-3">Yıllarca haftalar süren KDV iade listeleriyle, yüz binlerce satırlık mizanları faturalarla eşleştirme çabasıyla ve bitmek bilmeyen Excel mutabakatlarıyla boğuştuk. Meslek mensuplarının en değerli sermayesi olan "zamanın", veri ayıklamakla harcanmaması gerektiğine inandık. Bu inançla, bir denetçinin zekasına ve bir makinenin hızına sahip olan otonom adli muhasebe ve denetim yazılımı e-denetimPRO'yu hayata geçirdik.</p>
+</div>
+<div class="about-vision-box">
+<h4>Vizyonumuz</h4>
+<p class="mb-0">Geleneksel, manuel ve yorucu denetim yöntemlerini geçmişte bırakarak; Türkiye'deki mali müşavirlerin, yeminli mali müşavirlerin ve bağımsız denetçilerin dijital dönüşümüne öncülük etmek. Sektördeki profesyonellerin veri girişinden ve hesaplama yükünden kurtulup, sadece stratejiye, yoruma ve uzmanlıklarına odaklanabildikleri bir ekosistem yaratmak.</p>
+</div>
+<div class="about-diff-section">
+<h4 class="mb-2" style="font-size: 19px; font-weight: 700; color: #2a2a2a;">Neden Farklıyız?</h4>
+<p class="text-muted mb-4" style="font-size: 14.5px;">Biz sadece kod yazmıyoruz; vergi kanunlarını, VDK kararlarını, tekdüzen hesap planını ve bir denetçinin neye ihtiyacı olduğunu çok iyi biliyoruz.</p>
+<div class="row g-4">
+<div class="col-md-4">
+<div class="about-diff-card">
+<div class="icon-wrap">
+<i class="fas fa-utensils"></i>
+</div>
+<h5>Mutfaktan Geliyoruz</h5>
+<p>Çözüm ürettiğimiz sorunları bizzat sahada yaşadık. Bu yüzden e-denetimPRO, teorik değil tamamen pratik ve "ihtiyaca yönelik" bir mantıkla tasarlandı.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="about-diff-card">
+<div class="icon-wrap">
+<i class="fas fa-shield-alt"></i>
+</div>
+<h5>Güvenlik Kırmızı Çizgimiz</h5>
+<p>Finansal verilerin ne kadar hassas olduğunu biliyoruz. Bu yüzden sistemimizi %100 yerel (lokal) mimari ile, hiçbir veriyi buluta göndermeden çalışacak şekilde inşa ettik.</p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="about-diff-card">
+<div class="icon-wrap">
+<i class="fas fa-brain"></i>
+</div>
+<h5>Yapay Zeka Destekli Güç</h5>
+<p>1250'den fazla risk senaryosuyla, hataları siz daha aramadan bulan ve mevzuata uygun çözüm önerileri sunan proaktif bir sistem geliştirdik.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="about-promise-box">
+<h4>Sözümüz</h4>
+<p>
+                        "e-denetimPRO ekibi olarak size sadece bir yazılım değil; haftalar süren işleri dakikalara indiren, hata payını sıfırlayan ve gece gündüz ofiste çalışma zorunluluğunu ortadan kaldıran güvenilir bir 'Dijital Asistan' sunuyoruz.<br/><br/>
                         Siz mevzuattaki değişiklikleri takip edin, stratejinizi belirleyin ve uzmanlığınızı konuşturun. Geri kalan tüm angaryayı e-denetimPRO'nun zekasına bırakın."
                     </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
 </div>
-</body>
+</div>
+</div>
+</div>
+</div>
+</footer></body>
 </html>
