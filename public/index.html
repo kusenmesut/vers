@@ -16,6 +16,87 @@
 <link href="assets/css/animated.css" rel="stylesheet"/>
 <link href="assets/css/owl.css" rel="stylesheet"/>
 <style>
+
+    /* ==================================================
+   FİYATLANDIRMA KARTLARI (PRICING) STİLLERİ
+================================================== */
+.pricing-card {
+    background: #ffffff;
+    border-radius: 40px 0 40px 0; /* Görseldeki gibi çapraz yuvarlama */
+    padding: 50px 40px;
+    position: relative;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+    height: 100%;
+}
+.price-ribbon {
+    position: absolute;
+    right: -15px;
+    top: 40px;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+.price-ribbon::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    border-top: 15px solid #a00;
+    border-right: 15px solid transparent;
+}
+.red-ribbon { background-color: #e31837; }
+.red-ribbon::after { border-top-color: #900000; }
+
+.green-ribbon { background-color: #118c64; line-height: 1.2; padding: 12px 25px;}
+.green-ribbon small { font-size: 13px; font-weight: normal; }
+.green-ribbon::after { border-top-color: #0b5940; }
+
+.plan-subtitle { font-weight: 800; font-size: 15px; margin-bottom: 8px; }
+.red-text { color: #e31837; }
+.green-text { color: #118c64; }
+.plan-title { font-size: 22px; font-weight: 700; color: #2a2a2a; margin-bottom: 25px; }
+
+.card-divider { border-top: 2px solid #f0f0f0; margin: 25px 0; }
+
+.feature-list-price { list-style: none; padding: 0; margin: 0; }
+.feature-list-price li { display: flex; align-items: center; margin-bottom: 18px; font-size: 15.5px; color: #444; font-weight: 500;}
+.feature-list-price li i { margin-right: 15px; font-size: 20px; width: 25px; text-align: center;}
+.icon-red { color: #e31837; }
+.icon-green { color: #118c64; }
+
+.plan-note { font-size: 13px; color: #777; line-height: 1.6; margin-bottom: 60px; }
+
+.plan-button {
+    position: absolute;
+    bottom: 40px;
+    left: -15px;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 65%;
+    letter-spacing: 0.5px;
+}
+.plan-button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    border-bottom: 15px solid #900;
+    border-left: 15px solid transparent;
+}
+.red-button { background-color: #e31837; }
+.red-button::before { border-bottom-color: #900000; }
+.green-button { background-color: #118c64; }
+.green-button::before { border-bottom-color: #0b5940; }
+
         /* ==================================================
            1. DİKEY (KARTLI) BÖLÜM STİLLERİ
         ================================================== */
@@ -474,10 +555,9 @@
 <a class="logo" href="index.html"><h4>e-denetimPRO</h4></a>
 <ul class="nav">
 <li class="scroll-to-section"><a class="active" href="#top">ANA SAYFA</a></li>
-<li class="scroll-to-section"><a href="#kartli-ozellikler">AVANTAJLAR</a></li>
-<li class="scroll-to-section"><a href="#grid-ozellikler">ÖZELLİKLER</a></li>
+<li class="scroll-to-section"><a href="#grid-ozellikler">ÖZELLİKLER </a></li>
+<li class="scroll-to-section"><a href="#fiyatlar">ÜCRETLENDİRME</a></li>
 <li><a data-bs-target="#aboutModal" data-bs-toggle="modal" href="javascript:void(0)">HAKKIMIZDA</a></li>
-<li class="scroll-to-section"><a href="#services">KEŞFET</a></li>
 <li class="scroll-to-section"><a href="#contact">İLETİŞİM</a></li>
 <li><div class="main-blue-button"><a href="https://hesabim.e-denetim.com/web-register" target="_blank">ÜYELİK</a></div></li>
 </ul>
@@ -707,9 +787,7 @@
 </div>
 </div>
 </div>
-<div class="about-us section d-none" id="about_kopya_1773723324">
-<div class="container"><div class="row"><div class="col-lg-6"><div class="left-image wow fadeInLeft" data-wow-delay="0.5s"><img alt="" src="assets/images/wqwq.png"/></div></div><div class="col-lg-6 align-self-center wow fadeInRight" data-wow-delay="0.5s"><div class="section-heading"><h6>İADE İŞLEMLERİ MENÜSÜ:</h6><h2><em> e-denetimPRO</em> ile mükellefin e-faturalarından mevzuata uygun listeler oluşturun. <span></span></h2></div></div></div></div>
-</div><div class="section d-none" id="kartli-ozellikler">
+<div class="section d-none" id="kartli-ozellikler">
 <div class="container">
 <div class="section-heading text-center wow bounceIn" data-wow-delay="0.1s">
 <h6>NEDEN BİZ?</h6>
@@ -770,30 +848,59 @@
 </div>
 </div>
 </div>
-<div class="about-us section" id="about_bos_kopya_1773722455">
+<div class="section" id="fiyatlar" style="background-color: #f4f6f9; padding: 80px 0;">
 <div class="container">
 <div class="row">
-<div class="col-lg-12 text-center py-5">
-<h5 class="text-muted">ÖRNEK ANALİZ RAPORU:</h5>
+<!-- Sol Kart (İlk Yıl) -->
+<div class="col-lg-6 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+<div class="pricing-card">
+<div class="price-ribbon red-ribbon"><span>75.000 ₺</span></div>
+<h5 class="plan-subtitle red-text">STANDART PAKET</h5>
+<h3 class="plan-title">Lisans+ 1 Kullanıcı</h3>
+<hr class="card-divider"/>
+<ul class="feature-list-price">
+<li><i class="fas fa-info-circle icon-red"></i> LİMİTSİZ GB VERİ BOYUTU</li>
+<li><i class="fas fa-info-circle icon-red"></i> SINIRSIZ DEFTER YÜKLEME</li>
+<li><i class="fas fa-info-circle icon-red"></i> LİMİTSİZ ANALİZ SENARYOLARI ÇALIŞTIRMA</li>
+<li><i class="fas fa-info-circle icon-red"></i> TÜM MODÜLLERE ERİŞİM</li>
+<li><i class="fas fa-info-circle icon-red"></i> ÜCRETSİZ YAZILIM DESTEĞİ</li>
+<li><i class="fas fa-info-circle icon-red"></i> ÜCRETSİZ GÜNCELLEMELER</li>
+<li><i class="fas fa-check-circle icon-red"></i> KULLANICI EĞİTİMİ</li></ul>
+<hr class="card-divider"/>
+<p class="plan-note">İlk yıl boyunca tüm hizmetler ve destek ücrete dahildir.</p>
+<div class="plan-button red-button">İLK YIL PAKETİ</div>
+</div>
+</div>
+<!-- Sağ Kart (Sonraki Yıllar) -->
+<div class="col-lg-6 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+<div class="pricing-card">
+<div class="price-ribbon green-ribbon">
+<span>30.000 ₺</span><br/>
+<small>/ kullanıcı / yıl</small>
+</div>
+<h5 class="plan-subtitle green-text">SONRAKİ YILLAR</h5>
+<h3 class="plan-title">Ek Kullanıcı</h3>
+<hr class="card-divider"/>
+<ul class="feature-list-price">
+<li><i class="fas fa-info-circle icon-green"></i> HER KULLANICI İÇİN STANDART FİYAT</li>
+<li><i class="fas fa-info-circle icon-green"></i> YILLIK SABİT ÜCRET</li>
+<li><i class="fas fa-info-circle icon-green"></i> EK LİSANS ÜCRETİ YOK</li>
+<li><i class="fas fa-info-circle icon-green"></i></li>
+<li><i class="fas fa-info-circle icon-green"></i></li>
+<li><i class="fas fa-info-circle icon-green"></i></li>
+</ul>
+<hr class="card-divider"/>
+<p class="plan-note">Destek, güncelleme ve tüm hizmetler yıllık ücrete dahildir.</p>
+<div class="plan-button green-button">YILLIK YENİLEME</div>
 </div>
 </div>
 </div>
-<div class="container" style="padding-bottom: 40px; margin-top: 10px; text-align: center;">
-<div class="d-none d-md-block">
-<embed height="800px" src="assets/images/sa.pdf" style="border: 1px solid #ddd; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); max-width: 100%;" type="application/pdf" width="100%"/>
-</div>
-<div class="d-block d-md-none text-center py-5" style="background-color: #f4f6f9; border-radius: 15px; border: 2px dashed #4da6e7;">
-<i class="fas fa-file-pdf fa-3x mb-3" style="color: #e74c3c;"></i>
-<h4 style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Örnek Rapor</h4>
-<p style="font-size: 14px; color: #666; margin-bottom: 25px; padding: 0 20px;">Mobil cihazlarda raporu en iyi şekilde okuyabilmek için lütfen dosyayı cihazınızda açın.</p>
-<a class="btn btn-primary" href="assets/images/sa.pdf" style="background-color: #4da6e7; border: none; padding: 12px 35px; border-radius: 25px; font-weight: bold; box-shadow: 0 4px 10px rgba(77,166,231,0.3);" target="_blank">
-                Raporu Görüntüle 
-            </a>
+<div class="row mt-4 text-center wow fadeInUp" data-wow-delay="0.6s">
+<div class="col-12">
+
 </div>
 </div>
-<div class="container" style="padding-bottom: 40px; margin-top: 30px; text-align: center;"></div><div class="container" style="padding-bottom: 40px; margin-top: 30px; text-align: center;"></div></div>
-<div class="about-us section" id="about_kopya_1773722650">
-<div class="container"><div class="row"><div class="col-lg-6"><div class="left-image wow fadeInLeft" data-wow-delay="0.5s"><img alt="" src="assets/images/ww.png"/></div></div><div class="col-lg-6 align-self-center wow fadeInRight" data-wow-delay="0.5s"><div class="section-heading"><h6>EĞİTİM:</h6><h2><em> e-denetimPRO</em> kullanımı hakkında detaylı eğitimler verilmektedir. <span></span></h2></div></div></div></div>
+</div>
 </div>
 <div class="contact-us section" id="contact">
 <div class="container">
