@@ -15,6 +15,7 @@
 <link href="assets/css/templatemo-seo-dream.css" rel="stylesheet"/>
 <link href="assets/css/animated.css" rel="stylesheet"/>
 <link href="assets/css/owl.css" rel="stylesheet"/>
+<link href="assets/css/canli-tanitim.css" rel="stylesheet"/>
 <style>
 
     /* ==================================================
@@ -556,6 +557,7 @@
 <ul class="nav">
 <li class="scroll-to-section"><a class="active" href="#top">ANA SAYFA</a></li>
 <li class="scroll-to-section"><a href="#grid-ozellikler">ÖZELLİKLER </a></li>
+<li class="scroll-to-section"><a href="#canli-tanitim">CANLI DEMO</a></li>
 <li class="scroll-to-section"><a href="#fiyatlar">ÜCRETLENDİRME</a></li>
 <li><a data-bs-target="#aboutModal" data-bs-toggle="modal" href="javascript:void(0)">HAKKIMIZDA</a></li>
 <li class="scroll-to-section"><a href="#contact">İLETİŞİM</a></li>
@@ -664,107 +666,45 @@
 </div>
 </div>
 </div>
-<div class="section grid-features-section" id="grid-ozellikler">
+
+<div class="section" data-src="assets/data/canli_tanitim.json" id="canli-tanitim">
 <div class="container">
 <div class="section-heading text-center wow bounceIn" data-wow-delay="0.1s">
-<h6>SİSTEM YETENEKLERİ</h6>
-<h2>Tüm Özellikleri <span>İnceleyin</span></h2>
+<h6>CANLI DEMO</h6>
+<h2 data-ct-baslik="">Programı canlı inceleyin</h2>
+<p data-ct-alt="">Menüden bir ekran seçin; gerçek ürün ekranlarında sağa sola gezinin.</p>
 </div>
-<div class="row wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1s">
-<div class="col-lg-6">
-<div class="grid-tabs-wrapper" id="gridTabsContainer"><button class="grid-tab-btn" data-tab="tab_1778786428" onclick="filterGridTabs('tab_1778786428')">VERİ MAHREMİYETİ</button><button class="grid-tab-btn" data-tab="tab_1778846159_0" onclick="filterGridTabs('tab_1778846159_0')">DEFTER YÜKLEME</button><button class="grid-tab-btn" data-tab="tab_1778846159_1" onclick="filterGridTabs('tab_1778846159_1')">FATURA YÜKLEME</button><button class="grid-tab-btn" data-tab="tab_1778786349" onclick="filterGridTabs('tab_1778786349')">RİSK ANALİZİ</button><button class="grid-tab-btn" data-tab="tab_1778865553_0" onclick="filterGridTabs('tab_1778865553_0')">YEVMİYE DEFTERİ VE MİZAN </button><button class="grid-tab-btn" data-tab="tab_1778872903_0" onclick="filterGridTabs('tab_1778872903_0')">MALİ TABLOLAR ANALİZİ</button><button class="grid-tab-btn" data-tab="tab_1778876172_0" onclick="filterGridTabs('tab_1778876172_0')">AKILLI DENETİM TABLOLARI</button><button class="grid-tab-btn" data-tab="tab_1778885238_0" onclick="filterGridTabs('tab_1778885238_0')">NOT SİSTEMİ</button><button class="grid-tab-btn" data-tab="tab_1778885765_0" onclick="filterGridTabs('tab_1778885765_0')">HESAP ROBOTLARI</button></div>
-<div class="grid-container-left" id="gridFeatureList">
-<div class="grid-box-item active grid-item" data-desc="Müşterilerinizin en hassas finansal verileri (mizanlar, faturalar, yevmiye kayıtları) internete, uzak sunuculara veya üçüncü parti bulut sistemlerine asla gönderilmez." data-image="assets/images/vergiguvenligi.png" data-tab="tab_1778786428" data-title="Local Güvenlik" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/vergiguvenligi.png"/><h4>Local Güvenlik</h4>
-</div><div class="grid-box-item active grid-item" data-desc='Bulut tabanlı sistemlerin en büyük sorunu olan "sunucu yavaşlaması", "bağlantı kopması" veya "sisteme bakım yapılıyor" gibi can sıkıcı kesintileri unutun. e-denetimPRO, doğrudan bilgisayarınızın yerel donanım (CPU ve RAM) gücünü kullanarak çalışır. İnternetiniz kopsa dahi, gigabaytlarca büyüklükteki defter verilerini ışık hızında ve sıfır gecikmeyle işlemeye devam edersiniz.' data-image="assets/images/vergiguvenligiinternet.png" data-tab="tab_1778786428" data-title="İnternet Bağımlılığı Yok" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/vergiguvenligiinternet.png"/><h4>İnternet Bağımlılığı Yok</h4>
+<div class="ct-wrap">
+<aside aria-label="Program menüsü" class="ct-dir">
+<div class="ct-brand"><span aria-hidden="true" class="ct-logo">🛡️</span><span>e-DENETİM <b>PRO</b></span></div>
+<div class="ct-menuhead"><span>MENÜ</span><span aria-hidden="true" class="ct-burger">☰</span></div>
+<div class="ct-search"><input aria-label="Menüde ara" placeholder="🔍 Menüde ara" type="search"/></div>
+<button class="ct-home" type="button"><span aria-hidden="true">▦</span> ANA SAYFA</button>
+<div class="ct-dir-list"></div>
+<div class="ct-user"><div class="ct-bal">💰 Bakiye: Demo</div><div class="ct-hi"><span aria-hidden="true">👤</span> Hoş Geldin, Ziyaretçi</div></div>
+</aside>
+<div class="ct-stage">
+<div class="ct-chrome"><i></i><i></i><i></i><span>GERÇEK ÜRÜN EKRANI / eDenetimPRO</span></div>
+<div aria-label="Ürün ekranı, sol ve sağ ok tuşlarıyla gezinin" class="ct-view" tabindex="0">
+<img alt="" decoding="async"/>
+<div class="ct-empty"><b>Ekran görüntüsü hazırlanıyor</b><span>Bu modülün görüntüleri yakında eklenecek.</span></div>
+<button aria-label="Önceki resim" class="ct-arrow prev" type="button">‹</button>
+<button aria-label="Sonraki resim" class="ct-arrow next" type="button">›</button>
+<div class="ct-caption"></div>
+<div class="ct-badge"></div>
 </div>
-<div class="grid-box-item grid-item" data-desc="Tam yetki, verinizin kaderine sadece sizin karar vermeniz demektir. Hangi uygulamanın, ne kadar süreyle ve hangi amaçla verinize erişeceğini siz belirlersiniz." data-image="assets/images/vergiguvenligikontrol.png" data-tab="tab_1778786428" data-title="Tam Yetki ve Fiziksel Kontrol" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/vergiguvenligikontrol.png"/><h4>Tam Yetki ve Fiziksel Kontrol</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Yevmiye defterilerini .XML formatının yanında Logo, Zirve, Mikro vs. fark etmeksizin tüm excel defterlerinizi saniyeler içinde sisteme entegre edin.Mükellef ve Defter Seç menüsünden bir firma seçilir. Ardından Yeni Yükle (.xml/.xls) veya Yeni Fatura Yükle (XML/Zip) ekranına gelinerek büyük boyutlu bir dosya sürükle-bırak yöntemiyle sisteme yüklenir." data-image="assets/images/veriyukleme.png" data-tab="tab_1778846159_0" data-title=".xlsx ve .XML Desteği" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/veriyukleme.png"/><h4>.xlsx ve .XML Desteği</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc=".zip veya .xml e-faturalarınızı yükleyip analiz edebilrsiniz." data-image="assets/images/5-FaturaYukle.png" data-tab="tab_1778846159_1" data-title="e-Fatura Yükleme" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/5-FaturaYukle.png"/><h4>e-Fatura Yükleme</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Tüm e-faturalar üzerinde ayrıntılı arama ve analiz işlemi yapılıp excell olarak kaydedebilirsiniz." data-image="assets/images/6-FaturaAnliz.png" data-tab="tab_1778846159_1" data-title="Fatura Listeleme" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/6-FaturaAnliz.png"/><h4>Fatura Listeleme</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Analiz etmek istediğiniz defter parçalarını Aylık-3 Aylık veya Yıllık olarak yükleyebilirsiniz." data-image="assets/images/4-DefterYukle.png" data-tab="tab_1778846159_0" data-title="Aylık-3 Aylık-Yıllık Defter Yükleme" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/4-DefterYukle.png"/><h4>Aylık-3 Aylık-Yıllık Defter Yükleme</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Veriler bilgisayarınızda saklanacağı için sınırsız defter yükleyebilirsiniz..." data-image="assets/images/3-DefterYukle.png" data-tab="tab_1778846159_0" data-title="Sınırsız Defter Yükleme" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/3-DefterYukle.png"/><h4>Sınırsız Defter Yükleme</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="e-Faturalarını GİB formatında görüntüleyebilirsiniz." data-image="assets/images/6a-FaturaDetay.png" data-tab="tab_1778846159_1" data-title="e-Fatura Görüntüleme" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/6a-FaturaDetay.png"/><h4>e-Fatura Görüntüleme</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="1250+ vergi risk senaryosuyla tüm defteri yapay zeka destekli denetim motoru ile sınırsız denetleyebilirsiniz. " data-image="assets/images/7-RiskEkran.png" data-tab="tab_1778786349" data-title="Otonom Risk Denetimi" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/7-RiskEkran.png"/><h4>Otonom Risk Denetimi</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Denetim  tekniğine göre ilgili kategoriyi seçerek farklı inceleme yapabilirsiniz." data-image="assets/images/8-DenetimBaslat.png" data-tab="tab_1778786349" data-title="Teknik Risk Denetimleri" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/8-DenetimBaslat.png"/><h4>Teknik Risk Denetimleri</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Oluşturulan risk kalemlerini otomatik Yevmiye Fişi ve Fatura görüntülemeleriyle ayrıntılı analiz et." data-image="assets/images/riskdetay.png" data-tab="tab_1778786349" data-title="Riskleri Manuel İncele" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/riskdetay.png"/><h4>Riskleri Manuel İncele</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Her bir riski kendi grubunda sol menü de toplayarak iinteraktif inceleme yapılabilir." data-image="assets/images/risksolmenu.png" data-tab="tab_1778786349" data-title="Riskleri Gruplara Göre İnceleme " onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/risksolmenu.png"/><h4>Riskleri Gruplara Göre İnceleme</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Bir defteri değişiklik yaptıktan sonraki versiyonlarını da yükleyip sınırsız analiz edebilirsiniz." data-image="assets/images/riskanaliz.png" data-tab="tab_1778786349" data-title="Sınırsız Denetim Yetkisi" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/riskanaliz.png"/><h4>Sınırsız Denetim Yetkisi</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Yapılan analizde denetçi bakış açısı ve mevzuat açıklamaları ile desteklenmiştir." data-image="assets/images/riskaciklama.png" data-tab="tab_1778786349" data-title="Mevzuat Öneri Sistemi" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/riskaciklama.png"/><h4>Mevzuat Öneri Sistemi</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Yüklenmiş olan Yevmiye defterine kelime veya rakam olarak gelişmiş arama ve süzme yeteneği kazandırılmıştır. Veriler excele aktarılabilir." data-image="assets/images/10-YevmiyeDefteri.png" data-tab="tab_1778865553_0" data-title="Gelişmiş Arama Süzme" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/10-YevmiyeDefteri.png"/><h4>Gelişmiş Arama Süzme</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Yevmiye Defterini çeyrek dönemlere ayırıp, hesap ve muavin kodu bazında süzme ve sorgulama işlemleri hızlıca yapılabilir. İlgili Fiş ayrıntısı veya kayıtlı Fatura bir tıkla açılıp incelenebilir. " data-image="assets/images/10-YevmiyeDefteri2.png" data-tab="tab_1778865553_0" data-title=" Manuel Analiz" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/10-YevmiyeDefteri2.png"/><h4>Manuel Analiz</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Mizana bakış açınızı tamamen değiştiriyoruz. Gelişmiş süzme işlemleriyle hesap frekanslarını ve bakiyelerini analiz edin. Şüpheli bir bakiye mi gördünüz? Çift tıklayın; defter kaydı ve faturanın orijinal görüntüsü anında karşınızda. Aylık, 3 aylık ve yıllık mali tablolarınızı otomatik grafiklerle, yatay ve dikey analizlerle tek tuşla yorumlayın." data-image="assets/images/11a-MizanAnaliz.png" data-tab="tab_1778865553_0" data-title="İnteraktif Mizan-1" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/11a-MizanAnaliz.png"/><h4>İnteraktif Mizan-1</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Mizana bakış açınızı tamamen değiştiriyoruz. Gelişmiş süzme işlemleriyle hesap frekanslarını ve bakiyelerini analiz edin. Şüpheli bir bakiye mi gördünüz? Çift tıklayın; defter kaydı ve faturanın orijinal görüntüsü anında karşınızda. Aylık, 3 aylık ve yıllık mali tablolarınızı otomatik grafiklerle, yatay ve dikey analizlerle tek tuşla yorumlayın." data-image="assets/images/11b-MizanAnaliz.png" data-tab="tab_1778865553_0" data-title="İnteraktif Mizan-2" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/11b-MizanAnaliz.png"/><h4>İnteraktif Mizan-2</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Mizana bakış açınızı tamamen değiştiriyoruz. Gelişmiş süzme işlemleriyle hesap frekanslarını ve bakiyelerini analiz edin. Şüpheli bir bakiye mi gördünüz? Çift tıklayın; defter kaydı ve faturanın orijinal görüntüsü anında karşınızda. Aylık, 3 aylık ve yıllık mali tablolarınızı otomatik grafiklerle, yatay ve dikey analizlerle tek tuşla yorumlayın." data-image="assets/images/11c-MizanAnalizFis.png" data-tab="tab_1778865553_0" data-title="İnteraktif Mizan-3" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/11c-MizanAnalizFis.png"/><h4>İnteraktif Mizan-3</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Günlük, Aylık ve Kümülatif Bakiye Denetimiyle Ters Çalışan (Negatif) Hesapları Anında Yakalayın." data-image="assets/images/bakiye.png" data-tab="tab_1778865553_0" data-title="Bakiye Denetimi" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/bakiye.png"/><h4>Bakiye Denetimi</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Günlük, Aylık ve Kümülatif Bakiye Denetimiyle Ters Çalışan (Negatif) Hesapları Anında Yakalayın. Canlı inceleme yapın" data-image="assets/images/bakiye2.png" data-tab="tab_1778865553_0" data-title="Bakiye Denetimi" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/bakiye2.png"/><h4>Bakiye Denetimi</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Faturalardan GİB formatına uygun inidirim listeleri hazırlama robotu ile tam uyum sağlayın." data-image="assets/images/indirimlistesi.png" data-tab="tab_1778846159_1" data-title="İade İndirim Listesi" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/indirimlistesi.png"/><h4>İade İndirim Listesi</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Size özel senaryo talebini program üzerinden ileterek hızlı denetim tabloları oluşturabilriz." data-image="assets/images/taleponeri.png" data-tab="tab_1778786349" data-title="Senaryo Talep Sistemi" onclick="updateGridPanel(this)">
-<img alt="icon" src="assets/images/taleponeri.png"/><h4>Senaryo Talep Sistemi</h4>
-</div>
-<div class="grid-box-item grid-item" data-desc="Muhasebe veya İşletme yapısına göre size özel otonom senaryolar oluşturabiliriz." data-image="assets/images/8-DenetimBaslat.png" data-tab="tab_1778786349" data-title="Özel Senaryo Oluşturma" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/8-DenetimBaslat.png"/><h4>Özel Senaryo Oluşturma</h4></div><div class="grid-box-item grid-item" data-desc="Bilanço ve Gelir Tablolarınızı Aylık, 3 Aylık ve Yıllık Periyotlarda; Yatay, Dikey ve Yüzde Analizleriyle Derinlemesine İnceleyin." data-image="assets/images/12-YillikBilanco.png" data-tab="tab_1778872903_0" data-title="Bilanço Ve Gelir Tablosu Analizi" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/12-YillikBilanco.png"/><h4>Bilanço Ve Gelir Tablosu Analizi</h4></div><div class="grid-box-item grid-item" data-desc="Bilanço ve Gelir Tablolarınızı Aylık, 3 Aylık ve Yıllık Periyotlarda; Yatay, Dikey ve Yüzde Analizleriyle Derinlemesine İnceleyin." data-image="assets/images/15-DuseyYatayAnaliz.png" data-tab="tab_1778872903_0" data-title="Bilanço Ve Gelir Tablosu Analizi" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/15-DuseyYatayAnaliz.png"/><h4>Bilanço Ve Gelir Tablosu Analizi</h4></div><div class="grid-box-item grid-item" data-desc="Bilanço ve Gelir Tablolarınızı Aylık, 3 Aylık ve Yıllık Periyotlarda; Yatay, Dikey ve Yüzde Analizleriyle Derinlemesine İnceleyin." data-image="assets/images/15-DuseyYatayAnaliz.png" data-tab="tab_1778872903_0" data-title="Bilanço Ve Gelir Tablosu Analizi" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/15-DuseyYatayAnaliz.png"/><h4>Bilanço Ve Gelir Tablosu Analizi</h4></div><div class="grid-box-item grid-item" data-desc="Bilanço ve Gelir Tablolarınızı Aylık, 3 Aylık ve Yıllık Periyotlarda; Yatay, Dikey ve Yüzde Analizleriyle Derinlemesine İnceleyin." data-image="assets/images/16-MaliTablolarGrafik.png" data-tab="tab_1778872903_0" data-title="Bilanço Ve Gelir Tablosu Analizi" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/16-MaliTablolarGrafik.png"/><h4>Bilanço Ve Gelir Tablosu Analizi</h4></div><div class="grid-box-item grid-item" data-desc="Bilanço ve Gelir Tablolarınızı Aylık, 3 Aylık ve Yıllık Periyotlarda; Yatay, Dikey ve Yüzde Analizleriyle Derinlemesine İnceleyin." data-image="assets/images/maligrafikler.png" data-tab="tab_1778872903_0" data-title="Bilanço Ve Gelir Tablosu Analizi" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/maligrafikler.png"/><h4>Bilanço Ve Gelir Tablosu Analizi</h4></div><div class="grid-box-item grid-item" data-desc='Sistemin faturadaki KDV ile yevmiyedeki KDV hesaplarını (600 vs 391 ve 191 karşılıkları) nasıl karşılaştırdığı gösterilir. "Kaydedilmeyen veya Fazla/Eksik Kaydedilen Fatura" tablosu ile fiktif/kaçak işlem denetimi yapılır' data-image="assets/images/akilli1.png" data-tab="tab_1778876172_0" data-title="Fatura-Yevmiye Sorgu" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/akilli1.png"/><h4>Fatura-Yevmiye Sorgu</h4></div><div class="grid-box-item grid-item" data-desc='Sistemin faturadaki KDV ile yevmiyedeki KDV hesaplarını (600 vs 391 ve 191 karşılıkları) nasıl karşılaştırdığı gösterilir. "Kaydedilmeyen veya Fazla/Eksik Kaydedilen Fatura" tablosu ile fiktif/kaçak işlem denetimi yapılır' data-image="assets/images/akilli2.png" data-tab="tab_1778876172_0" data-title="Fatura-Yevmiye Tutar Sorgu" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/akilli2.png"/><h4>Fatura-Yevmiye Tutar Sorgu</h4></div><div class="grid-box-item grid-item" data-desc="Yevmiye defterinde kayıtlı mükerrer belgeleri sorgular." data-image="assets/images/akillimukerrer.png" data-tab="tab_1778876172_0" data-title="Mükerrer Gider Belgesi" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/akillimukerrer.png"/><h4>Mükerrer Gider Belgesi</h4></div><div class="grid-box-item grid-item" data-desc="Kaydedilmeyen, eksik veya fazla girilen faturaları buluyor; otomatik KDV ve matrah karşılaştırmalarıyla riskleri listeler." data-image="assets/images/akillisatid.png" data-tab="tab_1778876172_0" data-title="Satış Fatura-Yevmiye Çapraz" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/akillisatid.png"/><h4>Satış Fatura-Yevmiye Çapraz</h4></div><div class="grid-box-item grid-item" data-desc="Fatura içerikleri ve tutarlarını yönetimsel ve vergisel risklere göre analiz eder." data-image="assets/images/faturanalizi.png" data-tab="tab_1778876172_0" data-title="Fatura Analizi" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/faturanalizi.png"/><h4>Fatura Analizi</h4></div><div class="grid-box-item grid-item" data-desc="Alış ve Satış işlemlerinde carilerin doğru olup olmadığının kontrolünü yapar." data-image="assets/images/caridenetim.png" data-tab="tab_1778876172_0" data-title="120-320 Cari Denetimleri" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/caridenetim.png"/><h4>120-320 Cari Denetimleri</h4></div><div class="grid-box-item grid-item" data-desc="Mükellefin mali tablolarından vergisel ve yönetimsel otomatik analizler yapılmaktadır." data-image="assets/images/mrtabloalr.png" data-tab="tab_1778876172_0" data-title="MR Tabloları" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/mrtabloalr.png"/><h4>MR Tabloları</h4></div><div class="grid-box-item grid-item" data-desc="Finansman gider kısıtlaması  genel hesabı ve diğer hesaplamalar otomatik yapılmaktadır." data-image="assets/images/fgd.png" data-tab="tab_1778876172_0" data-title="Denetim Tabloları" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/fgd.png"/><h4>Denetim Tabloları</h4></div><div class="grid-box-item grid-item" data-desc="Birden fazla dönemin mali kalemlerini karşılaştırarak GİB-VDK incelemeye sevk analizleri yapılmaktadır." data-image="assets/images/vergincelemerisk.png" data-tab="tab_1778876172_0" data-title="Vergi İncelemesine Dönüşme Riski" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/vergincelemerisk.png"/><h4>Vergi İncelemesine Dönüşme Riski</h4></div><div class="grid-box-item grid-item" data-desc="Yevmiye kayıt bazlı, önceliklendirilebilir Akıllı Not Sistemi ve tek tıkla gelişmiş denetim raporu çıktısı." data-image="assets/images/not1.png" data-tab="tab_1778885238_0" data-title="Akıllı Hafıza:" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/not1.png"/><h4>Akıllı Hafıza:</h4></div><div class="grid-box-item grid-item" data-desc="arklı hesaplarda veya farklı yevmiye tarihlerinde aldığınız tüm notları tek bir ekranda, liste halinde görmenizi sağlar." data-image="assets/images/not.png" data-tab="tab_1778885238_0" data-title="Tüm Notları Aynı Anda Yönetme" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/not.png"/><h4>Tüm Notları Aynı Anda Yönetme</h4></div><div class="grid-box-item grid-item" data-desc="Alınan tüm notları, detayları ve ilgili yevmiye referanslarıyla birlikte tek tıkla profesyonel bir liste olarak dışa aktarır." data-image="assets/images/not12.png" data-tab="tab_1778885238_0" data-title="Profesyonel Çıktı ve Raporlama" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/not12.png"/><h4>Profesyonel Çıktı ve Raporlama</h4></div><div class="grid-box-item grid-item" data-desc="Akıllı Pivot Teknolojisi ile Yüz Binlerce Satır Veriyi Bilgisayarınız Kasmadan, Hızla Süzün. İlgili pivotu kaydedin..." data-image="assets/images/pivot.png" data-tab="tab_1778885765_0" data-title="Akıllı Pivot" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/pivot.png"/><h4>Akıllı Pivot</h4></div><div class="grid-box-item grid-item" data-desc="Reeskont işlemleri, Adat hesaplamaları, Finansman Gider Kısıtlaması ve Binek Oto Gider Kısıtı gibi karmaşık yasal hesaplamaların hatasız ve otomatik" data-image="assets/images/hesaplama.png" data-tab="tab_1778885765_0" data-title="Hızlı Hesaplamalar" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/hesaplama.png"/><h4>Hızlı Hesaplamalar</h4></div><div class="grid-box-item grid-item" data-desc="Oran Duyarlılık Analizi &amp; Mizan Tespitleri: Çapraz değişim denetimleri ve mali oran analizleri ile şirketin röntgeninin nasıl çekildiğini anlat." data-image="assets/images/duyarlilik.png" data-tab="tab_1778885765_0" data-title="Oran Duyarlılık Analizi" onclick="updateGridPanel(this)"><img alt="icon" src="assets/images/duyarlilik.png"/><h4>Oran Duyarlılık Analizi</h4></div></div>
-<div class="grid-pagination-container" id="gridPaginationDots"></div>
-</div>
-<div class="col-lg-6">
-<div class="display-panel-right-container wow fadeInRight" data-wow-delay="0.4s">
-<div class="monitor-wrapper">
-<img alt="Monitor Çerçevesi" class="monitor-frame" src="assets/images/monitor.png"/>
-<div class="monitor-screen">
-<img alt="Değişen Ekran" id="gridMainIcon" src="assets/images/finance_1.png"/>
-</div>
-</div>
-<div class="display-panel-right-text">
-<h3 id="gridMainTitle">Mizan Analizi</h3>
-<p id="gridMainDesc">Kümilatif günlük, aylık bakiyeleri hesaplayın.</p>
+<div class="ct-thumbs"></div>
+<div class="ct-detail">
+<div class="ct-meta"></div>
+<h3 class="ct-title"></h3>
+<div class="ct-slogan"></div>
+<p class="ct-desc"></p>
+<ul class="ct-bullets"></ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div class="container" style="padding-bottom: 40px; margin-top: 30px; text-align: center;"></div></div>
 <div class="our-services section" id="services">
 <div class="container">
 <div class="row">
@@ -897,7 +837,6 @@
 </div>
 <div class="row mt-4 text-center wow fadeInUp" data-wow-delay="0.6s">
 <div class="col-12">
-
 </div>
 </div>
 </div>
@@ -972,6 +911,7 @@
 <script src="assets/js/animation.js"></script>
 <script src="assets/js/imagesloaded.js"></script>
 <script src="assets/js/custom.js"></script>
+<script src="assets/js/canli-tanitim.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 // --- LIGHTBOX (RESİM BÜYÜTME) MANTIĞI - KESİN ÇÖZÜM ---

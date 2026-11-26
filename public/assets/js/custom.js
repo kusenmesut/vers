@@ -88,7 +88,11 @@
       var scrollPos = $(document).scrollTop();
       $('.nav a').each(function () {
           var currLink = $(this);
-          var refElement = $(currLink.attr("href"));
+          var href = currLink.attr("href") || "";
+          // Yalnız sayfa içi bölüm bağlantıları (#id); dış adres ve javascript:void(0) atlanır.
+          if (href.charAt(0) !== "#" || href.length < 2) return;
+          var refElement = $(href);
+          if (!refElement.length) return;
           if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
               $('.nav ul li a').removeClass("active");
               currLink.addClass("active");

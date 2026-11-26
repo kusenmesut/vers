@@ -1,0 +1,1660 @@
+{
+  "meta": {
+    "baslik": "Programı canlı inceleyin",
+    "alt_baslik": "Menüden bir ekran seçin; gerçek ürün ekranlarında sağa sola gezinin.",
+    "menu_config": "D:\\YEDEKLER PRO\\DCIM\\YEDEKLER\\yeniana\\menu_config.json",
+    "guncelleme": "26.11.2026 23:41"
+  },
+  "groups": [
+    {
+      "id": "veri-yukleme-islemleri",
+      "title": "VERİ YÜKLEME İŞLEMLERİ",
+      "icon": "📁",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "defter-yukle-xml-xls",
+          "target": "YeniDefterYukleFrame",
+          "title": "DEFTER YÜKLE (.xml/.xls)",
+          "slogan": "Defterleri saniyeler içinde sisteme alın.",
+          "aciklama": "XML e-defter ve ERP Excel muavinlerini sürükle-bırak ile yükleyin; format otomatik tanınır, veriler bilgisayarınızda kalır.",
+          "maddeler": [
+            "XML e-defter ve Excel muavin desteği",
+            "Logo, Zirve, Mikro vb. formatları otomatik tanıma",
+            "Aylık, 3 aylık veya yıllık parça yükleme",
+            "Veriler yerelde, sınırsız defter"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/defter-yukle-xml-xls/1795722141075_1.webp",
+              "caption": "Yeni defter yükleme sihirbazı",
+              "ipuclari": [
+                {
+                  "x": 4.35,
+                  "y": 15.0,
+                  "w": 94.1,
+                  "h": 31.11,
+                  "baslik": "SÜRÜKLE & BIRAK YÜKLEME",
+                  "metin": "**XML e-defter** dosyalarını veya **Logo, Zirve, Mikro** gibi ERP'lerin Excel muavinlerini bu alana bırakın; dosya biçimi **otomatik tanınır**."
+                },
+                {
+                  "x": 41.15,
+                  "y": 38.33,
+                  "w": 20.57,
+                  "h": 4.56,
+                  "baslik": "KLASÖR VEYA DOSYA SEÇ",
+                  "metin": "Klasör seçerek **aylık, 3 aylık ya da yıllık** defter parçalarının tamamını tek seferde alın."
+                },
+                {
+                  "x": 84.86,
+                  "y": 10.33,
+                  "w": 13.59,
+                  "h": 4.22,
+                  "baslik": "MANUEL HESAP OLUŞTUR",
+                  "metin": "Hesap planında bulunmayan hesapları elle tanımlayın; yükleme bu hesaplarla eşleşir."
+                },
+                {
+                  "x": 4.35,
+                  "y": 55.56,
+                  "w": 94.1,
+                  "h": 6.22,
+                  "baslik": "İŞLEMİ BAŞLAT",
+                  "metin": "Defter **bilgisayarınızdaki** arşive yazılır; buluta gönderilmez, defter sayısında sınır yoktur."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "fatura-yukle-xml-zip",
+          "target": "FaturaYukleFrame",
+          "title": "FATURA YÜKLE (.xml/.zip)",
+          "slogan": "e-Fatura, e-Arşiv ve entegratör verisi tek ekranda.",
+          "aciklama": "XML/ZIP e-fatura paketlerini, e-Arşiv ve indirilecek KDV Excel listelerini yükleyin ya da faturaları doğrudan entegratörden indirin.",
+          "maddeler": [
+            "XML ve ZIP paket yükleme",
+            "e-Arşiv ve İndirilecek KDV Excel şablonları",
+            "GİB'den e-Arşiv çekme",
+            "Entegratörden tek tıkla indirme",
+            "İptal faturalarını işleme"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/fatura-yukle-xml-zip/1795722141831_1.webp",
+              "caption": "E-fatura yükleme ve analiz",
+              "ipuclari": [
+                {
+                  "x": 3.06,
+                  "y": 8.76,
+                  "w": 95.87,
+                  "h": 20.48,
+                  "baslik": "XML / ZIP / EXCEL",
+                  "metin": "e-Fatura **XML ve ZIP** paketlerini ve e-Arşiv **Excel** listelerini aynı alana bırakın."
+                },
+                {
+                  "x": 34.46,
+                  "y": 36.18,
+                  "w": 33.31,
+                  "h": 5.01,
+                  "baslik": "ANLIK SAYAÇLAR",
+                  "metin": "E-Arşiv, indirilecek KDV belgesi ve **yüklenmeye hazır fatura** sayıları kaydetmeden önce görünür."
+                },
+                {
+                  "x": 33.69,
+                  "y": 44.14,
+                  "w": 33.31,
+                  "h": 5.12,
+                  "baslik": "ENTEGRATÖRDEN İNDİR",
+                  "metin": "Tanımlı entegratör hesabınızdan faturaları **tek tıkla** indirip sisteme kaydedin."
+                },
+                {
+                  "x": 67.76,
+                  "y": 44.14,
+                  "w": 31.16,
+                  "h": 5.12,
+                  "baslik": "İPTAL FATURA İŞLE",
+                  "metin": "İptal edilen faturaları işaretleyin; analiz ve mutabakatlardan **otomatik düşülür**."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/fatura-yukle-xml-zip/1795722142094_2.webp",
+              "caption": "E-Arşiv / İndirilecek KDV Excel yükleme",
+              "ipuclari": [
+                {
+                  "x": 38.17,
+                  "y": 23.05,
+                  "w": 50.38,
+                  "h": 4.18,
+                  "baslik": "ŞABLONLAR VE GİB",
+                  "metin": "Hazır **Excel şablonlarını** indirin ya da **GİB'den e-Arşiv** faturalarını doğrudan çekin."
+                },
+                {
+                  "x": 9.98,
+                  "y": 36.84,
+                  "w": 79.11,
+                  "h": 37.51,
+                  "baslik": "ÖN İZLEME",
+                  "metin": "Excel'deki uygun kayıtlar veritabanına yazılmadan önce **listede kontrol** edilir."
+                },
+                {
+                  "x": 73.58,
+                  "y": 80.11,
+                  "w": 15.9,
+                  "h": 4.97,
+                  "baslik": "YÜKLEMEYE HAZIRLA",
+                  "metin": "Onaylanan kayıtlar ana ekrandaki **Sisteme Kaydet** ile işlenir."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/fatura-yukle-xml-zip/1795722142373_3.webp",
+              "caption": "Entegratörden indir ve sisteme kaydet",
+              "ipuclari": [
+                {
+                  "x": 14.0,
+                  "y": 23.08,
+                  "w": 57.77,
+                  "h": 2.94,
+                  "baslik": "KAYITLI ENTEGRATÖR HESABI",
+                  "metin": "Daha önce tanımladığınız entegratör hesaplarından birini seçin; **eLogo, Sovos, NetBT, Zirve** ve diğerleri desteklenir."
+                },
+                {
+                  "x": 14.0,
+                  "y": 27.26,
+                  "w": 57.77,
+                  "h": 11.54,
+                  "baslik": "TARİH ARALIĞI",
+                  "metin": "İndirilecek faturaların **başlangıç ve bitiş** tarihlerini belirleyin."
+                },
+                {
+                  "x": 14.0,
+                  "y": 39.82,
+                  "w": 57.77,
+                  "h": 11.43,
+                  "baslik": "FATURA TÜRLERİ",
+                  "metin": "**Gelen / giden e-Fatura** ve **e-Arşiv** türlerini ayrı ayrı seçin."
+                },
+                {
+                  "x": 14.0,
+                  "y": 55.09,
+                  "w": 56.54,
+                  "h": 21.49,
+                  "baslik": "CANLI İŞLEM GÜNLÜĞÜ",
+                  "metin": "İndirilen XML'ler **diske geçici dosya yazılmadan** bellekte ayrıştırılır ve doğrudan mükellefin fatura veritabanına kaydedilir."
+                },
+                {
+                  "x": 14.0,
+                  "y": 83.48,
+                  "w": 42.77,
+                  "h": 2.83,
+                  "baslik": "İNDİR VE KAYDET",
+                  "metin": "Tek düğmeyle indirme, ayrıştırma ve kayıt; işlem istenirse **durdurulabilir**."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "beyanname-yukle",
+          "target": "BeyannameYukleFrame",
+          "title": "BEYANNAME YÜKLE",
+          "slogan": "KDV beyannamelerini PDF'ten okuyun.",
+          "aciklama": "GİB'den indirdiğiniz KDV beyanname PDF'lerini tek tek ya da klasörle yükleyin; beyan tutarları mutabakat ekranlarında kullanılır.",
+          "maddeler": [
+            "KDV beyanname PDF'lerini okuma",
+            "Klasörden toplu yükleme",
+            "KDV mutabakatı ve 191 çapraz kontrole veri"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/beyanname-yukle/1795722141523_1.webp",
+              "caption": "KDV beyanname yükleme sihirbazı",
+              "ipuclari": [
+                {
+                  "x": 2.86,
+                  "y": 6.42,
+                  "w": 95.99,
+                  "h": 35.22,
+                  "baslik": "PDF BEYANNAME YÜKLEME",
+                  "metin": "GİB'den aldığınız **KDV beyanname PDF'lerini** bu alana sürükleyin; beyan satırları otomatik okunur."
+                },
+                {
+                  "x": 42.58,
+                  "y": 32.96,
+                  "w": 16.61,
+                  "h": 4.78,
+                  "baslik": "TOPLU SEÇİM",
+                  "metin": "Klasör seçerek **tüm dönemlerin** beyannamelerini tek seferde yükleyin."
+                },
+                {
+                  "x": 2.86,
+                  "y": 52.45,
+                  "w": 95.99,
+                  "h": 6.92,
+                  "baslik": "MUTABAKATA HAZIR",
+                  "metin": "Beyan tutarları **KDV mutabakatı** ve **191 çapraz kontrol** ekranlarında defter ve faturalarla karşılaştırılır."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "otonom-risk-analizi",
+      "title": "OTONOM RİSK ANALİZİ",
+      "icon": "🚀",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "muhasebe-kayit-risk-denetimi",
+          "target": "DenetimFrame",
+          "title": "MUHASEBE-KAYIT RİSK DENETİMİ",
+          "slogan": "Senaryo grubunu seçin, riskleri otomatik bulun.",
+          "aciklama": "Defter, binlerce risk senaryosuyla taranır; bulgular kategori ağacında, ayrıntılar tabloda, çözüm önerisi altta.",
+          "maddeler": [
+            "Senaryo grubu seçimi",
+            "Minimum tutar sorgu sınırı",
+            "Kategori ağacında sonuçlar",
+            "Otomatik sonuç, risk nedeni ve çözüm önerisi",
+            "Fiş ve faturaya sağ tıkla geçiş"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/muhasebe-kayit-risk-denetimi/1795724678030_1.webp",
+              "caption": "Risk denetimi sonuçları",
+              "ipuclari": [
+                {
+                  "x": 30.46,
+                  "y": 7.4,
+                  "w": 39.68,
+                  "h": 4.28,
+                  "baslik": "SENARYO GRUBU",
+                  "metin": "Hesap kayıt anomalisi, genel inceleme, kelime analizi gibi grupları seçip **bulut denetimini** başlatın."
+                },
+                {
+                  "x": 0.0,
+                  "y": 12.72,
+                  "w": 16.6,
+                  "h": 72.25,
+                  "baslik": "SONUÇ AĞACI",
+                  "metin": "Riskler kategori ve senaryoya göre ağaçta; **renk risk düzeyini** gösterir."
+                },
+                {
+                  "x": 17.82,
+                  "y": 13.64,
+                  "w": 81.19,
+                  "h": 4.62,
+                  "baslik": "RİSK SAYAÇLARI",
+                  "metin": "Toplam risk ve seçilen senaryonun kayıt sayısı."
+                },
+                {
+                  "x": 18.58,
+                  "y": 23.7,
+                  "w": 80.65,
+                  "h": 38.73,
+                  "baslik": "RİSK DETAY TABLOSU",
+                  "metin": "Riskli kayıtlar yevmiye, belge, hesap ve tutarlarıyla; **dışa aktarılabilir**."
+                },
+                {
+                  "x": 18.51,
+                  "y": 64.74,
+                  "w": 64.66,
+                  "h": 35.26,
+                  "baslik": "SONUÇ VE ÇÖZÜM ÖNERİSİ",
+                  "metin": "**Analiz detayı**, özet veri ve **risk nedeni** otomatik yazılır."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/muhasebe-kayit-risk-denetimi/1795724678240_2.webp",
+              "caption": "Denetim kapsamı ve ayarlar",
+              "ipuclari": [
+                {
+                  "x": 32.39,
+                  "y": 26.68,
+                  "w": 35.06,
+                  "h": 34.09,
+                  "baslik": "SENARYO GRUPLARI",
+                  "metin": "Çalıştırılacak grupları işaretleyin; **Tümünü Seç** ile hepsi bir arada."
+                },
+                {
+                  "x": 32.39,
+                  "y": 62.6,
+                  "w": 35.06,
+                  "h": 5.82,
+                  "baslik": "SORGU SINIRI",
+                  "metin": "Belirlenen **minimum tutarın** altındaki kayıtlar sorguya katılmaz; sonuçlar sadeleşir."
+                },
+                {
+                  "x": 53.78,
+                  "y": 71.61,
+                  "w": 13.6,
+                  "h": 4.56,
+                  "baslik": "DENETİMİ BAŞLAT",
+                  "metin": "Seçilen kapsamla tarama başlar; sonuçlar **geçmiş raporlarda** saklanır."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/muhasebe-kayit-risk-denetimi/1795724678440_3.webp",
+              "caption": "Riskli kayıtta sağ tık işlemleri",
+              "ipuclari": [
+                {
+                  "x": 43.95,
+                  "y": 35.64,
+                  "w": 21.4,
+                  "h": 12.57,
+                  "baslik": "SAĞ TIK İŞLEMLERİ",
+                  "metin": "Hücreyi kopyalayın, **yevmiye fiş detayını** ya da **faturayı/belgeyi** görüntüleyin, not ekleyip risk atayın."
+                },
+                {
+                  "x": 18.91,
+                  "y": 32.41,
+                  "w": 24.96,
+                  "h": 4.27,
+                  "baslik": "SEÇİLİ KAYIT",
+                  "metin": "Riskli kaydı seçip sağ tıklayın; inceleme **tek pencerede** devam eder."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "fatura-kayit-risk-denetimi",
+          "target": "TabloDashboard",
+          "title": "FATURA-KAYIT RİSK DENETİMİ",
+          "slogan": "19 kuralla fatura - kayıt uyumunu tek tıkla tarayın.",
+          "aciklama": "Alış ve satış faturaları, cari ve kur farkı riskleri ile yevmiye kontrolleri kokpitte toplanır; her risk onaylanıp izlenir.",
+          "maddeler": [
+            "Kaydedilmeyen alış/satış faturaları",
+            "191 ve 391 KDV kayıt karşılaştırması",
+            "Tevkifat, iptal, iade ve NLP-kayıt kontrolleri",
+            "Aylık risk dağılımı",
+            "Onay ve karar geçmişi"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/fatura-kayit-risk-denetimi/1795724678667_1.webp",
+              "caption": "Kokpit özeti – görevler çalışıyor",
+              "ipuclari": [
+                {
+                  "x": 86.08,
+                  "y": 1.4,
+                  "w": 13.69,
+                  "h": 4.33,
+                  "baslik": "TÜM GÖREVLERİ ÇALIŞTIR",
+                  "metin": "Tanımlı tüm kurallar **tek tıkla** sırayla çalıştırılır."
+                },
+                {
+                  "x": 29.43,
+                  "y": 33.57,
+                  "w": 39.54,
+                  "h": 30.29,
+                  "baslik": "YÜKSEK PERFORMANSLI TARAMA",
+                  "metin": "İlerleme canlı görünür; tutar eşiği uygulanır, istenirse **güvenli çıkış** yapılır."
+                },
+                {
+                  "x": 1.98,
+                  "y": 8.65,
+                  "w": 97.26,
+                  "h": 7.49,
+                  "baslik": "KURAL VE RİSK ÖZETİ",
+                  "metin": "Tanımlı kural, toplam risk, riskli kayıt ve **onaylanan** sayısı."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/fatura-kayit-risk-denetimi/1795724678873_2.webp",
+              "caption": "Kokpit özeti – alış fatura analizleri",
+              "ipuclari": [
+                {
+                  "x": 2.3,
+                  "y": 16.72,
+                  "w": 97.55,
+                  "h": 6.34,
+                  "baslik": "AYLIK RİSK DAĞILIMI",
+                  "metin": "Her ayın risk sayısı; aya tıklayarak **o döneme** süzün."
+                },
+                {
+                  "x": 1.68,
+                  "y": 25.14,
+                  "w": 96.79,
+                  "h": 51.21,
+                  "baslik": "ALIŞ FATURA ANALİZLERİ",
+                  "metin": "Kaydedilmeyen faturalar, 191 karşılaştırma, içerik, tevkifat, iptal, **NLP-kayıt**, iade, mükerrer ve dönem dışı kontroller."
+                },
+                {
+                  "x": 83.01,
+                  "y": 29.41,
+                  "w": 15.07,
+                  "h": 46.71,
+                  "baslik": "RİSK ORANI",
+                  "metin": "Her kuralın riskli kayıt oranı **çubukla** gösterilir."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/fatura-kayit-risk-denetimi/1795724679073_3.webp",
+              "caption": "Kokpit özeti – cari, kur farkı ve satış analizleri",
+              "ipuclari": [
+                {
+                  "x": 2.28,
+                  "y": 25.09,
+                  "w": 95.98,
+                  "h": 20.6,
+                  "baslik": "CARİ VE KUR FARKI",
+                  "metin": "**Karşılıklı alış-satış mahsuplaşma** ve kur farkı yanlış hesap riskleri."
+                },
+                {
+                  "x": 2.28,
+                  "y": 46.61,
+                  "w": 95.98,
+                  "h": 40.51,
+                  "baslik": "SATIŞ FATURA ANALİZLERİ",
+                  "metin": "Kaydedilmeyen satışlar, **391 KDV karşılaştırma**, tutar uyumsuzluğu, içerik, NLP, mükerrer ve KDV oranı kontrolleri."
+                },
+                {
+                  "x": 2.28,
+                  "y": 88.38,
+                  "w": 95.98,
+                  "h": 9.67,
+                  "baslik": "YEVMİYE KONTROLLERİ",
+                  "metin": "**Borç-alacak dengesi bozuk** yevmiye fişleri ayrıca listelenir."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/fatura-kayit-risk-denetimi/1795724679298_4.webp",
+              "caption": "Kaydedilmeyen alış faturaları",
+              "ipuclari": [
+                {
+                  "x": 1.64,
+                  "y": 19.14,
+                  "w": 97.87,
+                  "h": 10.81,
+                  "baslik": "RİSK ÖZETİ",
+                  "metin": "Kuralın toplam kayıt, riskli kayıt, **toplam matrah ve KDV** tutarı."
+                },
+                {
+                  "x": 1.8,
+                  "y": 31.64,
+                  "w": 20.23,
+                  "h": 4.73,
+                  "baslik": "AÇIK / ONAYLANAN",
+                  "metin": "Açık riskler ve onaylananlar ayrı sekmelerde; kayıtlarda arama yapın."
+                },
+                {
+                  "x": 76.23,
+                  "y": 31.64,
+                  "w": 23.12,
+                  "h": 4.73,
+                  "baslik": "ONAY VE KARAR GEÇMİŞİ",
+                  "metin": "Seçilenleri onaylayın, onayı geri alın; **karar geçmişi** denetim izi olarak tutulur."
+                },
+                {
+                  "x": 1.64,
+                  "y": 46.62,
+                  "w": 97.06,
+                  "h": 3.04,
+                  "baslik": "AYLARA GÖRE GRUPLAMA",
+                  "metin": "Riskli faturalar **ay ay** gruplanır."
+                },
+                {
+                  "x": 64.89,
+                  "y": 62.61,
+                  "w": 30.92,
+                  "h": 7.43,
+                  "baslik": "SİSTEM UYARISI",
+                  "metin": "Fatura no ile bulunamayan kayıtlar **matrah-tutar eşleşmesiyle** yevmiyede aranır."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/fatura-kayit-risk-denetimi/1795724679640_5.webp",
+              "caption": "Riskli faturadan fişe ve e-faturaya",
+              "ipuclari": [
+                {
+                  "x": 16.43,
+                  "y": 60.26,
+                  "w": 2.43,
+                  "h": 3.09,
+                  "baslik": "YEVMİYE BAĞLANTISI",
+                  "metin": "Yevmiye numarasına tıklayın; ilgili **fiş** açılır."
+                },
+                {
+                  "x": 31.81,
+                  "y": 18.1,
+                  "w": 26.52,
+                  "h": 6.29,
+                  "baslik": "FİŞ BİLGİLERİ",
+                  "metin": "Fiş no, tarih ve **belge numarası** ile fişin tüm kalemleri."
+                },
+                {
+                  "x": 34.56,
+                  "y": 41.5,
+                  "w": 51.16,
+                  "h": 58.5,
+                  "baslik": "FİŞTEN FATURAYA",
+                  "metin": "Belgeden ilgili **e-fatura**, GİB'in orijinal görünümünde açılır."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "mali-mr-istatistikler",
+          "target": "TablolarUI",
+          "title": "MALİ MR-İSTATİSTİKLER",
+          "slogan": "Hazır denetim şablonları, otomatik yorumla.",
+          "aciklama": "Şablon kütüphanesinden bir analiz seçin; oranlar hesaplanır, her senaryo skorlanır ve yorumu yazılır.",
+          "maddeler": [
+            "Alış/satış KDV ve fatura istatistik tabloları",
+            "120-320 cari ve mali MR tabloları",
+            "Senaryo bazlı durum skoru",
+            "Otomatik yorum ve çözüm önerisi",
+            "Excel ve PDF çıktı"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/mali-mr-istatistikler/1795724677603_1.webp",
+              "caption": "Şablon kütüphanesi ve yorumlu analiz",
+              "ipuclari": [
+                {
+                  "x": 0.76,
+                  "y": 10.45,
+                  "w": 23.19,
+                  "h": 75.36,
+                  "baslik": "ŞABLON KÜTÜPHANESİ",
+                  "metin": "Alış/satış KDV, fatura istatistikleri, **120-320 cari**, **mali MR**, tevkifat ve özel Python rapor şablonları."
+                },
+                {
+                  "x": 25.69,
+                  "y": 12.54,
+                  "w": 51.93,
+                  "h": 3.08,
+                  "baslik": "YORUMLU ANALİZ",
+                  "metin": "Her senaryonun amacı, kullanılan hesaplar, hesaplama, sonuç ve **hedef kriteri** yan yana."
+                },
+                {
+                  "x": 77.63,
+                  "y": 15.62,
+                  "w": 6.21,
+                  "h": 83.39,
+                  "baslik": "DURUM SKORU",
+                  "metin": "Senaryolar **GÜVENLİ, VERGİ RİSKİ, FİNANSAL RİSK** gibi skorlarla etiketlenir."
+                },
+                {
+                  "x": 83.83,
+                  "y": 15.62,
+                  "w": 16.17,
+                  "h": 83.39,
+                  "baslik": "YORUM VE ÇÖZÜM",
+                  "metin": "Her bulgu için **otomatik yorum** ve dikkat edilmesi gereken nokta yazılır."
+                },
+                {
+                  "x": 25.69,
+                  "y": 93.29,
+                  "w": 58.14,
+                  "h": 2.64,
+                  "baslik": "KRİTİK BULGU",
+                  "metin": "Bilanço ile gelir tablosu uyumsuzluğu gibi kritik bulgular satırda **vurgulanır**."
+                },
+                {
+                  "x": 84.1,
+                  "y": 2.42,
+                  "w": 15.68,
+                  "h": 4.18,
+                  "baslik": "EXCEL VE PDF",
+                  "metin": "Analizi tek tıkla **Excel'e** aktarın veya **PDF** olarak kaydedin."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "yevmiye-ve-fatura-goruntule",
+      "title": "YEVMİYE VE FATURA GÖRÜNTÜLE",
+      "icon": "🧾",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "yevmiye-defteri",
+          "target": "YevmiyeAnalizFrame",
+          "title": "YEVMİYE DEFTERİ",
+          "slogan": "Yevmiye defterinde fişten faturaya iniş.",
+          "aciklama": "Defteri fiş fiş gruplanmış hâlde inceleyin; tutar, tarih ve döneme göre süzün, fişi açıp belgesinden e-faturaya geçin.",
+          "maddeler": [
+            "Tutar, tarih ve dönem süzgeçleri",
+            "Fiş toplamı ve kalem sayısıyla gruplama",
+            "Fiş inceleme ve denge kontrolü",
+            "Belgeden e-faturaya geçiş",
+            "Excel ve PDF çıktı"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/yevmiye-defteri/1795722144057_1.webp",
+              "caption": "Yevmiye defteri analizi",
+              "ipuclari": [
+                {
+                  "x": 0.76,
+                  "y": 5.05,
+                  "w": 98.91,
+                  "h": 6.59,
+                  "baslik": "HIZLI ARAMA VE SÜZME",
+                  "metin": "Fiş no, ünvan ve açıklamada arayın; **tutar aralığı**, tarih ve **dönem (1-4)** ile anında süzün."
+                },
+                {
+                  "x": 0.98,
+                  "y": 29.42,
+                  "w": 98.69,
+                  "h": 3.07,
+                  "baslik": "FİŞ TOPLAMI SATIRLARI",
+                  "metin": "Kayıtlar fiş fiş gruplanır; her fişin **kalem sayısı ve toplamı** ayrı satırda görünür."
+                },
+                {
+                  "x": 86.94,
+                  "y": 0.0,
+                  "w": 13.06,
+                  "h": 4.61,
+                  "baslik": "RAPOR VE AYARLAR",
+                  "metin": "Defteri **Excel, PDF** ve rapor olarak alın; görünüm ayarlarını değiştirin."
+                },
+                {
+                  "x": 68.44,
+                  "y": 96.16,
+                  "w": 31.56,
+                  "h": 3.07,
+                  "baslik": "CANLI TOPLAMLAR",
+                  "metin": "**35 bin satırı** aşan defterde kayıt sayısı, toplam borç ve alacak anında hesaplanır."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/yevmiye-defteri/1795722144587_2.webp",
+              "caption": "Fiş inceleme ve denge kontrolü",
+              "ipuclari": [
+                {
+                  "x": 18.47,
+                  "y": 11.34,
+                  "w": 21.86,
+                  "h": 6.39,
+                  "baslik": "FİŞ İNCELEME",
+                  "metin": "Yevmiye satırına tıklayın; **fiş no, tarih ve belge** bilgileriyle fişin tüm kalemleri açılır."
+                },
+                {
+                  "x": 64.88,
+                  "y": 12.44,
+                  "w": 15.23,
+                  "h": 4.19,
+                  "baslik": "EXCEL VE PDF",
+                  "metin": "Fişi tek tıkla **Excel'e** aktarın veya **PDF** rapor oluşturun."
+                },
+                {
+                  "x": 18.79,
+                  "y": 70.37,
+                  "w": 61.26,
+                  "h": 10.13,
+                  "baslik": "DENGE KONTROLÜ",
+                  "metin": "Toplam borç ve alacak karşılaştırılır; fiş durumu **DENGELEDE / DENGESİZ** olarak işaretlenir."
+                },
+                {
+                  "x": 70.79,
+                  "y": 84.03,
+                  "w": 9.04,
+                  "h": 2.97,
+                  "baslik": "FİŞ İÇİ ARAMA",
+                  "metin": "Kalabalık fişlerde hesap, cari veya tutarı **fiş içinde** arayın."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/yevmiye-defteri/1795722145113_3.webp",
+              "caption": "Fişten e-faturaya geçiş",
+              "ipuclari": [
+                {
+                  "x": 0.59,
+                  "y": 0.0,
+                  "w": 40.63,
+                  "h": 75.43,
+                  "baslik": "FİŞTEN FATURAYA",
+                  "metin": "Fiş satırındaki **belge numarasından** ilgili e-fatura, GİB formatında yanında açılır."
+                },
+                {
+                  "x": 42.71,
+                  "y": 36.53,
+                  "w": 49.6,
+                  "h": 3.56,
+                  "baslik": "İNDİRİLECEK KDV KAYDI",
+                  "metin": "**191 İndirilecek KDV** satırı, faturadaki hesaplanan KDV ile birebir karşılaştırılabilir."
+                },
+                {
+                  "x": 42.71,
+                  "y": 78.45,
+                  "w": 49.44,
+                  "h": 9.81,
+                  "baslik": "BORÇ / ALACAK DENGESİ",
+                  "metin": "Fişin toplam borç ve alacağı ile **denge durumu** anında görünür."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "fatura-tablosu",
+          "target": "TumFaturalarFrame",
+          "title": "FATURA TABLOSU",
+          "slogan": "Tüm faturalarınız tek panelde, kalem kalem.",
+          "aciklama": "Yüklenen e-faturaları filtreleyin, aylık dağılımı görün, kalem veya fatura bazında inceleyin ve tek tıkla GİB formatında açın.",
+          "maddeler": [
+            "Yön, para birimi, tip ve KDV oranı filtreleri",
+            "Aylık adet ve tutar dağılımı",
+            "Kalem veya fatura bazlı görünüm",
+            "GİB formatında görüntüleme ve PDF",
+            "Excel'e aktarım"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/fatura-tablosu/1795722142696_1.webp",
+              "caption": "Fatura denetim ve analiz paneli",
+              "ipuclari": [
+                {
+                  "x": 0.44,
+                  "y": 0.89,
+                  "w": 16.85,
+                  "h": 21.33,
+                  "baslik": "AKILLI FİLTRELER",
+                  "metin": "Fatura yönü, para birimi, tip ve **KDV oranına** göre anında süzün; **Detaylı Arama** ile ünvan ve ürün bazında bulun."
+                },
+                {
+                  "x": 0.88,
+                  "y": 26.22,
+                  "w": 15.86,
+                  "h": 71.78,
+                  "baslik": "AYLIK DAĞILIM",
+                  "metin": "Her ayın **fatura adedi ve tutarı** listelenir; aya tıklayarak o döneme inin."
+                },
+                {
+                  "x": 18.98,
+                  "y": 11.44,
+                  "w": 81.02,
+                  "h": 9.0,
+                  "baslik": "ÖZET GÖSTERGELER",
+                  "metin": "Toplam fatura, KDV hariç genel toplam, **ortalama fatura** ve **benzersiz cari** sayısı."
+                },
+                {
+                  "x": 57.88,
+                  "y": 1.33,
+                  "w": 42.12,
+                  "h": 3.89,
+                  "baslik": "GÖRÜNÜM VE ÇIKTI",
+                  "metin": "**Kalem bazlı** tüm satırlar ya da **fatura bazlı** tek satır; Excel'e aktarın, sütunları özelleştirin."
+                },
+                {
+                  "x": 18.93,
+                  "y": 22.44,
+                  "w": 80.2,
+                  "h": 70.67,
+                  "baslik": "KALEM DETAYI",
+                  "metin": "Mal/hizmet, miktar, fiyat, **tevkifat** ve vergi sütunları; başlıklardan sıralayıp süzün."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/fatura-tablosu/1795722143356_2.webp",
+              "caption": "Faturayı orijinal GİB formatında görüntüleme",
+              "ipuclari": [
+                {
+                  "x": 17.72,
+                  "y": 0.0,
+                  "w": 42.28,
+                  "h": 3.48,
+                  "baslik": "ORİJİNAL GİB FORMATI",
+                  "metin": "Listeden bir satıra tıklayın; fatura **GİB'in orijinal görünümünde** ayrı pencerede açılır."
+                },
+                {
+                  "x": 49.73,
+                  "y": 5.34,
+                  "w": 9.24,
+                  "h": 4.76,
+                  "baslik": "PDF İNDİR / YAZDIR",
+                  "metin": "Görüntülenen faturayı **PDF** olarak kaydedin veya yazdırın."
+                },
+                {
+                  "x": 19.4,
+                  "y": 44.72,
+                  "w": 39.02,
+                  "h": 25.78,
+                  "baslik": "KALEM KONTROLÜ",
+                  "metin": "Fatura satırlarını, **KDV oranı ve tutarlarıyla** defter kaydının yanında karşılaştırın."
+                },
+                {
+                  "x": 60.05,
+                  "y": 54.01,
+                  "w": 38.59,
+                  "h": 3.72,
+                  "baslik": "SEÇİLİ SATIR",
+                  "metin": "Açılan fatura, listede vurgulanan kalemin **belge numarasından** bulunur."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mali-tablo-denetimleri",
+      "title": "MALİ TABLO DENETİMLERİ",
+      "icon": "📈",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "manuel-sorgu-ekrani",
+          "target": "YevmiyeManuelDenetimUI",
+          "title": "MANUEL SORGU EKRANI",
+          "slogan": "Kendi denetim kuralınızı kurun, defterde arayın.",
+          "aciklama": "Kural tabanlı sorgular ve bilimsel yöntemlerle defteri tarayın; sorgularınızı kaydedip istediğiniz zaman yeniden çalıştırın.",
+          "maddeler": [
+            "Yasaklı eşleşme ve zorunlu hesap bağımlılığı",
+            "Hesap kalıbı (pattern) analizi",
+            "Frekans, zaman ve Benford analizi",
+            "Kayıtlı sorgular (hafıza)",
+            "Fiş bazlı sonuç, Excel ve PDF"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/manuel-sorgu-ekrani/1795724680008_1.webp",
+              "caption": "Denetim kuralları ve sonuçlar",
+              "ipuclari": [
+                {
+                  "x": 0.98,
+                  "y": 18.44,
+                  "w": 21.0,
+                  "h": 38.5,
+                  "baslik": "DENETİM KURALLARI",
+                  "metin": "**Yasaklı eşleşmeler, zorunlu hesap bağımlılığı, hesap kalıbı** ve **frekans, Benford** gibi bilimsel yöntemler."
+                },
+                {
+                  "x": 0.66,
+                  "y": 61.28,
+                  "w": 21.49,
+                  "h": 38.5,
+                  "baslik": "PARAMETRELER",
+                  "metin": "Yasaklı hesap kodlarını ve yönü belirleyin; sorguyu **kaydedip** sonra yeniden yükleyin."
+                },
+                {
+                  "x": 24.06,
+                  "y": 1.52,
+                  "w": 75.94,
+                  "h": 7.05,
+                  "baslik": "SONUÇLAR",
+                  "metin": "Bulunan **fiş sayısı**; Excel ve PDF çıktı."
+                },
+                {
+                  "x": 24.22,
+                  "y": 15.73,
+                  "w": 75.01,
+                  "h": 3.04,
+                  "baslik": "FİŞ BAZLI SONUÇ",
+                  "metin": "Sonuçlar fiş fiş gruplanır; her fişin kalem sayısı ve toplamı görünür."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "mizan-tablosu",
+          "target": "MizanFrame",
+          "title": "MİZAN TABLOSU",
+          "slogan": "Mizandan harekete, hareketten faturaya.",
+          "aciklama": "Ağaç yapılı mizanda bir hesaba tıklayın; hareketleri yürüyen bakiyeyle görün, fişe ve e-faturaya inin, hesap analizlerini sağ tıkla açın.",
+          "maddeler": [
+            "Ağaç yapılı ana mizan",
+            "Yürüyen bakiyeli hesap hareketleri",
+            "Açılış kaydını hariç tutma",
+            "Bakiye, frekans, grafik ve dalgalanma analizleri",
+            "Ana mizan ve muavin Excel çıktıları"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/mizan-tablosu/1795724680373_1.webp",
+              "caption": "Finansal mizan ve hareket analizi",
+              "ipuclari": [
+                {
+                  "x": 0.54,
+                  "y": 7.44,
+                  "w": 26.12,
+                  "h": 85.56,
+                  "baslik": "ANA MİZAN",
+                  "metin": "Hesaplar **ağaç yapısında**; alt hesaplara inin, borç-alacak toplamları anında."
+                },
+                {
+                  "x": 27.84,
+                  "y": 7.88,
+                  "w": 71.08,
+                  "h": 3.5,
+                  "baslik": "HAREKETLER",
+                  "metin": "Seçilen hesabın tüm hareketleri, kayıt sayısı ve **yürüyen bakiye** ile."
+                },
+                {
+                  "x": 70.54,
+                  "y": 1.75,
+                  "w": 28.0,
+                  "h": 3.39,
+                  "baslik": "DÖNEM VE AÇILIŞ",
+                  "metin": "Yıllık veya aylık görünüm; **açılış kaydını hariç tutma** seçeneği."
+                },
+                {
+                  "x": 27.84,
+                  "y": 11.82,
+                  "w": 70.71,
+                  "h": 2.95,
+                  "baslik": "SÜTUN FİLTRELERİ",
+                  "metin": "Her sütun başlığından **süzün**; filtreleri tek tıkla temizleyin."
+                },
+                {
+                  "x": 0.54,
+                  "y": 94.64,
+                  "w": 98.38,
+                  "h": 4.92,
+                  "baslik": "EXCEL ÇIKTILARI",
+                  "metin": "**Ana mizan, muavin** ve görüntülenen liste ayrı ayrı Excel'e."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/mizan-tablosu/1795724680816_2.webp",
+              "caption": "Hareketten fişe ve e-faturaya",
+              "ipuclari": [
+                {
+                  "x": 27.87,
+                  "y": 35.84,
+                  "w": 16.44,
+                  "h": 2.65,
+                  "baslik": "HAREKETTEN FİŞE",
+                  "metin": "Hareket satırından ilgili **yevmiye fişi** açılır."
+                },
+                {
+                  "x": 45.18,
+                  "y": 10.51,
+                  "w": 51.86,
+                  "h": 8.3,
+                  "baslik": "FİŞ İNCELEME",
+                  "metin": "Fiş no, tarih ve belge bilgileri; **Excel ve PDF** çıktı."
+                },
+                {
+                  "x": 34.5,
+                  "y": 47.57,
+                  "w": 45.98,
+                  "h": 52.43,
+                  "baslik": "BELGEDEN FATURAYA",
+                  "metin": "Fişteki belgeden ilgili **e-fatura**, GİB formatında yanında açılır."
+                }
+              ]
+            },
+            {
+              "src": "assets/images/canli_tanitim/mizan-tablosu/1795724681232_3.webp",
+              "caption": "Hesap analizleri menüsü",
+              "ipuclari": [
+                {
+                  "x": 11.16,
+                  "y": 35.42,
+                  "w": 13.12,
+                  "h": 9.65,
+                  "baslik": "HESAP İŞLEMLERİ MENÜSÜ",
+                  "metin": "Sağ tıkla **bakiye denetimi, sıklık/frekans, grafik** ve **bakiye dalgalanma (dip/zirve)** analizleri."
+                },
+                {
+                  "x": 0.44,
+                  "y": 37.83,
+                  "w": 26.24,
+                  "h": 53.4,
+                  "baslik": "ALT HESAPLAR",
+                  "metin": "Ana hesap açılınca alt hesaplar **borç-alacak** toplamlarıyla listelenir."
+                },
+                {
+                  "x": 75.39,
+                  "y": 7.79,
+                  "w": 24.33,
+                  "h": 2.85,
+                  "baslik": "BORÇ / ALACAK / BAKİYE",
+                  "metin": "Seçilen hesabın toplam borç, alacak ve **bakiyesi** üst satırda."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "bilanco-gelir-tablosu",
+          "target": "FinancialReportsView",
+          "title": "BİLANÇO - GELİR TABLOSU",
+          "slogan": "Bilanço ve gelir tablosu, dikey ve yatay analizle.",
+          "aciklama": "Defterden Tek Düzen Hesap Planı düzeninde bilanço ve gelir tablosu oluşur; dikey/yatay analiz, grafik ve yönetici kokpiti tek tıkla.",
+          "maddeler": [
+            "TDHP düzeninde bilanço ve gelir tablosu",
+            "Düşey ve yatay analiz",
+            "Çoklu yıl karşılaştırma",
+            "Yansıtma kayıtları kontrolü",
+            "Excel, grafik ve yönetici kokpiti"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/bilanco-gelir-tablosu/1795724681968_1.webp",
+              "caption": "Bilanço özeti",
+              "ipuclari": [
+                {
+                  "x": 1.93,
+                  "y": 4.59,
+                  "w": 13.29,
+                  "h": 3.58,
+                  "baslik": "BİLANÇO / GELİR TABLOSU",
+                  "metin": "İki tablo arasında **tek tıkla** geçin."
+                },
+                {
+                  "x": 2.04,
+                  "y": 11.31,
+                  "w": 17.04,
+                  "h": 3.81,
+                  "baslik": "BEYAN / DÜŞEY / YATAY",
+                  "metin": "Beyan görünümü, **düşey ve yatay analiz**; CTRL + tık ile çoklu yıl seçimi."
+                },
+                {
+                  "x": 31.22,
+                  "y": 11.31,
+                  "w": 8.94,
+                  "h": 3.81,
+                  "baslik": "YANSITMA KAYITLARI",
+                  "metin": "**Yansıtma kayıtları** ayrıca listelenir; kapanış hataları gözden kaçmaz."
+                },
+                {
+                  "x": 67.51,
+                  "y": 11.31,
+                  "w": 31.94,
+                  "h": 3.81,
+                  "baslik": "EXCEL, GRAFİK VE KOKPİT",
+                  "metin": "Excel çıktı, **grafik seçimi** ve **yönetici kokpiti**."
+                },
+                {
+                  "x": 2.04,
+                  "y": 16.8,
+                  "w": 96.69,
+                  "h": 80.18,
+                  "baslik": "TDHP DÜZENİNDE TABLO",
+                  "metin": "Hesaplar **Tek Düzen Hesap Planı** düzeninde gruplanır; alt kırılımlar açılıp kapanır."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "bakiye-denetim-tablosu",
+          "target": "BalanceAnalizFrame",
+          "title": "BAKİYE DENETİM TABLOSU",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "mali-hesaplamalar",
+      "title": "MALİ HESAPLAMALAR",
+      "icon": "📊",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "adat-finansman-gid-kist",
+          "target": "HesaplamaHavuzuFrame",
+          "title": "ADAT, FİNANSMAN GİD. KIST....",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "mali-oran-duyarlilik-analizi",
+          "target": "DegisimAnaliziUI",
+          "title": "MALİ ORAN DUYARLILIK ANALIZI",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "akilli-pivot-tablo",
+          "target": "PivotTableFrame",
+          "title": "AKILLI PİVOT TABLO",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "iade-islemleri",
+      "title": "İADE İŞLEMLERİ",
+      "icon": "🏗️",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "iade-listesi-olustur",
+          "target": "IadeListesiFrame",
+          "title": "İade Listesi Oluştur",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "karsit-tespit-listesi-olustur",
+          "target": "KarsitIncelemeEngine",
+          "title": "Karşıt Tespit Listesi Oluştur",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "e-ymm-karsit-durum-cizelgesi",
+          "target": "EymmDurumCizelgesiFrame",
+          "title": "e-YMM Karşıt Durum Çizelgesi",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "karsit-tespit-e-karsit-e-cevap",
+          "target": "KarsitTespitFrame",
+          "title": "Karşıt Tespit (e-Karşıt / e-Cevap)",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "beyanname-islemleri",
+      "title": "BEYANNAME İŞLEMLERİ",
+      "icon": "🧮",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "kurum-gecici",
+          "target": "BeyannameFrame",
+          "title": "KURUM-GEÇİCİ",
+          "slogan": "Geçici ve kurumlar vergisi matrahı defterden hazır.",
+          "aciklama": "Gelir tablosu kalemleri defterden hesaplanır; vergisel düzeltmeleri girin, matrah ve hesaplanan vergiyi anında görün.",
+          "maddeler": [
+            "Defterden otomatik gelir tablosu",
+            "KKEG, istisna, bağış ve diğer vergisel düzeltmeler",
+            "Geçmiş yıl zararı ve mahsuplar",
+            "Matrah özeti ve dağılım grafiği",
+            "PDF çıktı ve kayıt"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/kurum-gecici/1795724675474_1.webp",
+              "caption": "Geçici vergi / kurumlar vergisi hesaplama",
+              "ipuclari": [
+                {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "w": 42.56,
+                  "h": 2.89,
+                  "baslik": "DÖNEM VE HESAPLAMA MANTIĞI",
+                  "metin": "Geçici vergi dönemini, hesaplama mantığını (ör. **6'lı hesaplar, yansıtılmış**) ve vergi oranını seçin."
+                },
+                {
+                  "x": 0.97,
+                  "y": 4.88,
+                  "w": 96.82,
+                  "h": 12.21,
+                  "baslik": "MATRAH KARTLARI",
+                  "metin": "Ticari kâr, matraha eklenecek ve indirilecekler, geçmiş yıl zararı, **kurumlar vergisi matrahı** ve hesaplanan vergi tek bakışta."
+                },
+                {
+                  "x": 1.35,
+                  "y": 25.53,
+                  "w": 46.88,
+                  "h": 73.03,
+                  "baslik": "HESAP KALEMLERİ",
+                  "metin": "Satışlardan olağan kâra kadar tüm kalemler **defterden otomatik** hesaplanır; (+) ile manuel gelir veya gider ekleyin."
+                },
+                {
+                  "x": 49.41,
+                  "y": 19.42,
+                  "w": 34.38,
+                  "h": 46.06,
+                  "baslik": "VERGİSEL DÜZELTMELER",
+                  "metin": "**KKEG, finansman gider kısıtlaması, istisnalar, bağışlar, enflasyon düzeltmesi** için tutar girin ve matraha ekle/çıkar seçin."
+                },
+                {
+                  "x": 49.41,
+                  "y": 66.59,
+                  "w": 21.98,
+                  "h": 30.19,
+                  "baslik": "MATRAH HESAPLAMA ÖZETİ",
+                  "metin": "Ticari kârdan **kurumlar vergisi matrahına** giden adımlar ve hesaplanan vergi."
+                },
+                {
+                  "x": 88.25,
+                  "y": 0.0,
+                  "w": 10.78,
+                  "h": 2.77,
+                  "baslik": "PDF VE KAYIT",
+                  "metin": "Hesaplamayı **PDF** olarak alın veya kaydedip sonra devam edin."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "kdv-beyanlari",
+          "target": "KdvAylikFrame",
+          "title": "KDV BEYANLARI",
+          "slogan": "Aylık KDV tablosu defterden tek tıkla.",
+          "aciklama": "Hesaplanan, indirilecek, devreden ve ödenecek KDV'yi ay ay görün; eğilim ve oran dağılımı grafiklerle.",
+          "maddeler": [
+            "Defterden aylık KDV hesabı",
+            "Tevkifat ve istisna/ihraç toplamları",
+            "Devreden ve ödenecek KDV takibi",
+            "Hesaplanan - indirilecek KDV grafiği",
+            "Oranlara göre KDV dağılımı"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/kdv-beyanlari/1795724676002_1.webp",
+              "caption": "Dönemsel KDV özet tablosu",
+              "ipuclari": [
+                {
+                  "x": 0.56,
+                  "y": 0.65,
+                  "w": 35.61,
+                  "h": 3.26,
+                  "baslik": "DÖNEM SEÇİMİ",
+                  "metin": "Başlangıç ve bitiş ayını seçin; **Yenile (Defterden Oku)** ile KDV hesapları defterden yeniden okunur."
+                },
+                {
+                  "x": 0.28,
+                  "y": 5.44,
+                  "w": 99.72,
+                  "h": 9.79,
+                  "baslik": "KDV KARTLARI",
+                  "metin": "Hesaplanan, indirilecek, tevkifat, istisna/ihraç, devreden ve ödenecek KDV toplamları ve **dönem ortalamaları**."
+                },
+                {
+                  "x": 0.68,
+                  "y": 21.55,
+                  "w": 65.41,
+                  "h": 41.78,
+                  "baslik": "DÖNEMSEL KDV ÖZET TABLOSU",
+                  "metin": "Her ay için hesaplanan, indirilecek, devreden ve ödenecek KDV; **net durum** ödenecekse kırmızı, devredense yeşil."
+                },
+                {
+                  "x": 67.38,
+                  "y": 16.87,
+                  "w": 28.73,
+                  "h": 40.59,
+                  "baslik": "HESAPLANAN VS İNDİRİLECEK",
+                  "metin": "Aylık KDV eğilimi grafikte; **sıra dışı aylar** hemen göze çarpar."
+                },
+                {
+                  "x": 67.38,
+                  "y": 58.76,
+                  "w": 28.73,
+                  "h": 40.59,
+                  "baslik": "ORANLARA GÖRE DAĞILIM",
+                  "metin": "Hesaplanan KDV'nin **KDV oranlarına** göre dağılımı."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "beyannameler",
+          "target": "BeyannameOzetFrame",
+          "title": "BEYANNAMELER",
+          "slogan": "12 aylık KDV beyannamesi tek tabloda.",
+          "aciklama": "Yüklenen KDV beyannameleri matrah, hesaplanan, indirimler ve sonuç hesapları düzeninde 12 ay yan yana özetlenir.",
+          "maddeler": [
+            "Beyanname düzeninde 4 ana bölüm",
+            "Toplam matrah, indirimler ve ödenecek KDV",
+            "Devreden KDV takibi",
+            "Ay satırından ayrıntıya iniş"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/beyannameler/1795724676293_1.webp",
+              "caption": "KDV beyannameleri – 12 aylık toplu özet",
+              "ipuclari": [
+                {
+                  "x": 0.76,
+                  "y": 12.09,
+                  "w": 97.89,
+                  "h": 8.52,
+                  "baslik": "BEYANNAME ÖZETİ",
+                  "metin": "Yüklenen beyannamelerden toplam matrah, hesaplanan KDV, indirimler, istisnalar, **ödenecek ve devreden KDV**."
+                },
+                {
+                  "x": 5.26,
+                  "y": 29.26,
+                  "w": 44.34,
+                  "h": 13.1,
+                  "baslik": "4 ANA BÖLÜM",
+                  "metin": "Matrah, hesaplanan, indirimler ve sonuç hesapları **beyanname düzeninde** gruplanır."
+                },
+                {
+                  "x": 0.81,
+                  "y": 42.37,
+                  "w": 48.78,
+                  "h": 54.96,
+                  "baslik": "AY AYRINTISI",
+                  "metin": "Ay satırına **çift tıklayarak** o dönemin beyanname ayrıntısını açın."
+                },
+                {
+                  "x": 94.15,
+                  "y": 5.85,
+                  "w": 4.5,
+                  "h": 3.82,
+                  "baslik": "YENİLE",
+                  "metin": "Yeni beyanname yükledikten sonra özeti tazeleyin."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "kdv-mutakabat",
+          "target": "KDV1_2_UI",
+          "title": "KDV MUTAKABAT",
+          "slogan": "Fatura, yevmiye ve beyanname aynı denetim kokpitinde.",
+          "aciklama": "Alış ve satış faturaları defter kayıtları ve KDV hesaplarıyla karşılaştırılır; riskler kategori kategori puanlanır.",
+          "maddeler": [
+            "Belge/kayıt güvenilirliği kontrolleri",
+            "KDV indirim mutabakatı",
+            "Tevkifat ve mevzuat uyumu",
+            "Cari, dövizli işlem ve dönemsellik kontrolleri",
+            "Öncelikli denetim tutarı"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/kdv-mutakabat/1795724676571_1.webp",
+              "caption": "KDV denetim platformu – alış analiz dashboard",
+              "ipuclari": [
+                {
+                  "x": 0.0,
+                  "y": 18.24,
+                  "w": 11.83,
+                  "h": 79.82,
+                  "baslik": "KDV - MİZAN KOKPİTİ",
+                  "metin": "191 KKEG metin analizi, 191 analiz tablosu, **alış ve satış analiz tabloları** tek menüde."
+                },
+                {
+                  "x": 13.9,
+                  "y": 16.76,
+                  "w": 48.07,
+                  "h": 3.53,
+                  "baslik": "DÖNEM FİLTRESİ",
+                  "metin": "Tüm yıl ya da tek ay; tablolar seçilen döneme göre yenilenir."
+                },
+                {
+                  "x": 14.28,
+                  "y": 22.35,
+                  "w": 83.22,
+                  "h": 13.23,
+                  "baslik": "RİSK ÖZETİ",
+                  "metin": "Toplam işlem, riskli ve kritik işlem sayıları ile **uyum oranı**."
+                },
+                {
+                  "x": 14.28,
+                  "y": 38.08,
+                  "w": 83.22,
+                  "h": 29.19,
+                  "baslik": "RİSK KATEGORİLERİ",
+                  "metin": "**Belge/kayıt güvenilirliği**, **KDV indirim mutabakatı**, **tevkifat ve mevzuat uyumu**; her başlıkta adet ve tutar."
+                },
+                {
+                  "x": 74.44,
+                  "y": 69.67,
+                  "w": 23.05,
+                  "h": 25.88,
+                  "baslik": "GENEL SONUÇ VE ÖNERİ",
+                  "metin": "Kritik ve yüksek riskli işlemlerden **öncelikli denetim tutarı** hesaplanır."
+                },
+                {
+                  "x": 67.03,
+                  "y": 0.34,
+                  "w": 32.26,
+                  "h": 3.99,
+                  "baslik": "RİSKİ ONAYLA VE ÇIKTI",
+                  "metin": "Riskleri onaylayın veya değiştirin; **Excel, PDF** ve sütun ayarları."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "slug": "191-capraz-kontrol",
+          "target": "capraz191_matrix",
+          "title": "191 ÇAPRAZ KONTROL",
+          "slogan": "Her faturayı 191 muavinindeki kaydıyla eşleştirin.",
+          "aciklama": "Fatura numarası 191 hesabındaki belge numarasıyla eşleştirilir; 11 senaryoluk risk matrisi her faturayı tek satırda gösterir.",
+          "maddeler": [
+            "Fatura no - belge no eşleştirmesi",
+            "11 senaryolu risk matrisi",
+            "Eksik, fazla ve kısmi KDV indirimi",
+            "Mükerrer kayıt ve iptal fatura kontrolü",
+            "Sağ tıkla risk onayı ve not"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/191-capraz-kontrol/1795724676962_1.webp",
+              "caption": "Fatura – 191 KDV mutabakatı ve risk analizi",
+              "ipuclari": [
+                {
+                  "x": 0.43,
+                  "y": 0.34,
+                  "w": 83.67,
+                  "h": 9.27,
+                  "baslik": "191 MUTABAKATI",
+                  "metin": "Fatura no ile **191 muavinindeki belge no** eşleştirilir; senaryo bazlı denetim yapılır."
+                },
+                {
+                  "x": 89.76,
+                  "y": 2.03,
+                  "w": 8.89,
+                  "h": 5.88,
+                  "baslik": "ANALİZİ ÇALIŞTIR",
+                  "metin": "Sonuçlar **aktif sürüm veritabanına** kaydedilir; tekrar açınca hazır gelir."
+                },
+                {
+                  "x": 0.43,
+                  "y": 13.33,
+                  "w": 98.22,
+                  "h": 9.27,
+                  "baslik": "SONUÇ KARTLARI",
+                  "metin": "Toplam fatura, tam eşleşme, incelenecek, yüksek ve **kritik risk** sayıları."
+                },
+                {
+                  "x": 43.4,
+                  "y": 31.75,
+                  "w": 54.29,
+                  "h": 5.54,
+                  "baslik": "11 SENARYOLU RİSK MATRİSİ",
+                  "metin": "Mükerrer kayıt, eşleşmeyen fatura, **eksik/fazla/kısmi KDV indirimi**, iptal, tevkifat ve 360 hesap kontrolleri."
+                },
+                {
+                  "x": 35.04,
+                  "y": 37.29,
+                  "w": 8.25,
+                  "h": 61.02,
+                  "baslik": "EŞLEŞME DURUMU",
+                  "metin": "Her faturanın eşleşme sonucu: **kusursuz**, eşleşmedi ya da açıkta kalan fatura."
+                },
+                {
+                  "x": 86.52,
+                  "y": 52.2,
+                  "w": 13.48,
+                  "h": 9.94,
+                  "baslik": "SAĞ TIK MENÜSÜ",
+                  "metin": "Riski **tek tek onaylayın**, ayrıntısını açın ya da not ekleyip risk atayın."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mukellef-yonetimi",
+      "title": "MÜKELLEF YÖNETİMİ",
+      "icon": "👥",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "mukellef-bilgi-karti",
+          "target": "MukellefBilgiKartiUI",
+          "title": "Mükellef Bilgi Kartı",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "mukellef-defter-sil",
+          "target": "VeriYonetimiFrame",
+          "title": "Mukellef - Defter Sil",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        }
+      ]
+    },
+    {
+      "id": "ayarlar",
+      "title": "AYARLAR",
+      "icon": "⚙️",
+      "hidden": false,
+      "items": [
+        {
+          "slug": "talep-oneri-formu",
+          "target": "TalepFormu",
+          "title": "Talep Öneri Formu",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "hakkimizda",
+          "target": "OzelHTML",
+          "title": "Hakkımızda",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "kurumsal",
+          "target": "WorkManagementFrame",
+          "title": "KURUMSAL",
+          "slogan": "",
+          "aciklama": "",
+          "maddeler": [],
+          "hidden": true,
+          "images": []
+        },
+        {
+          "slug": "entegrator-ayarlari",
+          "target": "EntegratorYonetimiFrame",
+          "title": "Entegratör Ayarları",
+          "slogan": "Entegratör hesaplarınızı bir kez tanımlayın.",
+          "aciklama": "e-Fatura entegratörünüzü seçin, API ya da portal girişiyle bağlantıyı test edin; faturalar sonra tek tıkla indirilir.",
+          "maddeler": [
+            "Çoklu entegratör desteği",
+            "API veya kullanıcı adı/şifre ile giriş",
+            "Bağlantı ve listeleme testi",
+            "Otomatik protokol keşfi"
+          ],
+          "hidden": false,
+          "images": [
+            {
+              "src": "assets/images/canli_tanitim/entegrator-ayarlari/1795724677307_1.webp",
+              "caption": "Entegratör bağlantısı",
+              "ipuclari": [
+                {
+                  "x": 1.64,
+                  "y": 17.67,
+                  "w": 96.02,
+                  "h": 3.42,
+                  "baslik": "ENTEGRATÖR SEÇİMİ",
+                  "metin": "**QNB eFinans, eLogo, Sovos, NetBT, Zirve** ve diğer entegratörler listeden seçilir."
+                },
+                {
+                  "x": 1.64,
+                  "y": 29.53,
+                  "w": 17.02,
+                  "h": 2.74,
+                  "baslik": "GİRİŞ YÖNTEMİ",
+                  "metin": "**API bilgileriyle** ya da portal **kullanıcı adı ve şifresiyle** bağlanın."
+                },
+                {
+                  "x": 1.64,
+                  "y": 33.07,
+                  "w": 96.02,
+                  "h": 16.65,
+                  "baslik": "PORTAL PARAMETRELERİ",
+                  "metin": "Seçilen entegratörün istediği alanlar otomatik gelir; bilgileri girip kaydedin."
+                },
+                {
+                  "x": 1.64,
+                  "y": 56.56,
+                  "w": 39.44,
+                  "h": 3.53,
+                  "baslik": "BAĞLANTIYI DENE",
+                  "metin": "Bağlantıyı ve listelemeyi test edin; **otomatik protokol keşfi** ile yeni portallar tanımlanır."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
